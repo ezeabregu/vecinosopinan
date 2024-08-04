@@ -9,4 +9,11 @@ export const ContainerError = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  h2 {
+    font-size: 5rem;
+  }
+  span {
+    font-weight: 800;
+  }
 `;
