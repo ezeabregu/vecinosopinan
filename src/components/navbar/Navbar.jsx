@@ -8,9 +8,11 @@ const Navbar = () => {
         Vecinos Opinan
         <ul>
           <li>Buscar</li>
-          <li>Sobre Nosotros</li>
+          <li>Sobre nosotros</li>
+          <li>
+            <button>Login</button>
+          </li>
         </ul>
-        <button>Login</button>
       </NavbarSection>
     </ContainerNavbar>
   );
