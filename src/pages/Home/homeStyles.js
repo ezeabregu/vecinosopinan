@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContainerHome = styled.div`
   width: 100vw;
+  height: calc(100vh - 60px);
   padding: 5rem;
   display: flex;
   justify-content: center;

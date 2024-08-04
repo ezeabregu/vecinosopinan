@@ -1,16 +1,20 @@
 import React from "react";
 import { ContainerNavbar, NavbarSection } from "./navbarStyles";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <ContainerNavbar>
       <NavbarSection>
-        Vecinos Opinan
+        <p onClick={() => navigate("/")}>Vecinos Opinan</p>
+
         <ul>
-          <li>Buscar</li>
-          <li>Sobre nosotros</li>
+          <li onClick={() => navigate("/map")}>Buscar</li>
+          <li onClick={() => navigate("/about")}>Sobre nosotros</li>
           <li>
-            <button>Login</button>
+            <button onClick={() => navigate("/login")}>Iniciar sesión</button>
           </li>
         </ul>
       </NavbarSection>
