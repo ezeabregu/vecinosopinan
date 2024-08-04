@@ -7,7 +7,7 @@ export const ContainerNavbar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--verdePastel);
+  background-color: var(--fondoOscuro);
   color: var(--blanco);
 `;
 
@@ -27,7 +27,7 @@ export const NavbarSection = styled.div`
   }
 
   button {
-    background-color: var(--verdePastel);
+    background-color: var(--fondoOscuro);
     border: 1px solid var(--blanco);
     color: var(--blanco);
     border-radius: 5px;

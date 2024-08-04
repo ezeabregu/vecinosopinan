@@ -8,7 +8,7 @@ export const ContainerHome = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  background-color: var(--verde);
+  background-color: var(--fondo);
   color: var(--blanco);
 
   h1 {
