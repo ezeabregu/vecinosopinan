@@ -20,7 +20,7 @@ export const ContainerHome = styled.div`
     letter-spacing: 2px;
   }
   p {
-    max-width: 500px;
+    max-width: 650px;
     text-decoration: center;
     font-size: 1.3rem;
     line-height: 40px;
