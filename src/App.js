@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Footer from "./components/footer/Footer";
 import Login from "./pages/Login/Login";
 import Error404 from "./pages/404/Error404";
+import Search from "./pages/Search/Search";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/map" element={<Search />}></Route>
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
