@@ -18,6 +18,7 @@ export const NavbarSection = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 
   p {
     cursor: pointer;
@@ -38,5 +39,18 @@ export const NavbarSection = styled.div`
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+  }
+
+  @media (max-width: 800px) {
+    ul {
+      display: none;
+    }
+  }
+`;
+
+export const MenuBurger = styled.div`
+  display: none;
+  @media (max-width: 800px) {
+    display: block;
   }
 `;
