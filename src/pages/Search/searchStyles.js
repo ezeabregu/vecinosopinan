@@ -15,6 +15,12 @@ export const ContainerSearch = styled.div`
   p {
     color: var(--blanco);
   }
+
+  @media (max-width: 800px) {
+    padding-top: 3rem;
+    gap: 4rem;
+    height: auto;
+  }
 `;
 
 export const MapResponsive = styled.div`
