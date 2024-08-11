@@ -19,6 +19,9 @@ export const ContainerHome = styled.div`
   span {
     font-weight: 800;
     letter-spacing: 2px;
+    background: linear-gradient(#00112c, var(--fondo));
+    -webkit-background-clip: text;
+    color: transparent;
   }
   p {
     max-width: 650px;
