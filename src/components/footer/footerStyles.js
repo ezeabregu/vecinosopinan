@@ -7,4 +7,8 @@ export const ContainerFooter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 800px) {
+    font-size: 0.7rem;
+  }
 `;

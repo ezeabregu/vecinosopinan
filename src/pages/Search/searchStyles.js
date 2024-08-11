@@ -52,4 +52,10 @@ export const ContainerBarriosList = styled.div`
     font-weight: 500;
     scrollbar-width: thin;
   }
+
+  @media (max-width: 800px) {
+    select {
+      width: 90%;
+    }
+  }
 `;

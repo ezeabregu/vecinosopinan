@@ -26,4 +26,15 @@ export const ContainerHome = styled.div`
     font-size: 1.3rem;
     line-height: 40px;
   }
+
+  @media (max-width: 800px) {
+    padding: 2rem;
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.8rem;
+      line-height: 20px;
+    }
+  }
 `;
