@@ -8,6 +8,9 @@ export const ContainerSearch = styled.div`
   color: var(--blanco);
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 
   p {
     color: var(--blanco);
@@ -21,6 +24,8 @@ export const MapResponsive = styled.div`
   height: 80vh;
   width: 80vw;
   max-width: 1300px;
+  border: none;
+  border-radius: 10px;
 
   Iframe {
     left: 0;
@@ -28,5 +33,23 @@ export const MapResponsive = styled.div`
     height: 100%;
     width: 100%;
     position: absolute;
+  }
+`;
+
+export const ContainerBarriosList = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  select {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--blanco);
+    font-size: 1rem;
+    font-weight: 500;
+    scrollbar-width: thin;
   }
 `;
