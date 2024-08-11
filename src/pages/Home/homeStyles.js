@@ -35,6 +35,10 @@ export const ContainerHome = styled.div`
     h1 {
       font-size: 2rem;
     }
+    span {
+      font-size: 3.5rem;
+      letter-spacing: 8px;
+    }
     p {
       font-size: 0.8rem;
       line-height: 20px;
