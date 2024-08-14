@@ -10,11 +10,11 @@ const Home = () => {
       <p>
         En este espacio, los vecinos tienen la oportunidad de compartir sus
         experiencias y opiniones respecto al barrio donde se encuentre. Creemos
-        que cada voz cuenta y que a traves de opiniones y experiencias se puede
+        que cada voz cuenta y que a través de opiniones y experiencias se puede
         conocer un barrio.
       </p>
       <p>
-        Únete y descubre lo que otros piensan y comparte tus propias historias
+        Únete y descubre lo que otros piensan. Comparte tus propias historias
         del barrio.
       </p>
     </ContainerHome>
