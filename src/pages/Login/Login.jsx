@@ -6,10 +6,19 @@ const Login = () => {
     <ContainerLogin>
       <ContainerForm>
         <form action="">
-          <label htmlFor="">Usuario</label>
-          <input type="text" />
-          <label htmlFor="">Contraseña</label>
-          <input type="password" />
+          <h3>Iniciar sesión</h3>
+          <div>
+            <label htmlFor="">Correo electrónico</label>
+            <input type="text" placeholder="Ingrese email" />
+          </div>
+          <div>
+            <label htmlFor="">Contraseña</label>
+            <input type="password" placeholder="Ingrese contraseña" />
+          </div>
+          <div className="divRecordar">
+            <input type="checkbox" name="" id="" />
+            <label htmlFor=""> Recordarme</label>
+          </div>
           <button>Inicia sesión</button>
         </form>
       </ContainerForm>

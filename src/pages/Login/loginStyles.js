@@ -19,23 +19,35 @@ export const ContainerForm = styled.form`
   background-color: var(--fondoOscuro);
   display: flex;
   justify-content: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .divRecordar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
   form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
   }
   button {
-    background-color: var(--fondoOscuro);
+    width: 100%;
+    background-color: #fff;
     border: 1px solid var(--blanco);
-    color: var(--blanco);
+    color: var(--fondoOscuro);
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
     &:hover {
-      background-color: #fff;
-      color: var(--fondoOscuro);
+      background-color: var(--fondoOscuro);
+      color: #fff;
     }
   }
   input {
@@ -44,5 +56,8 @@ export const ContainerForm = styled.form`
     color: var(--blanco);
     border-radius: 5px;
     padding: 10px 20px;
+  }
+  label {
+    font-size: 0.8rem;
   }
 `;
