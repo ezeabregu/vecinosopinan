@@ -35,7 +35,7 @@ export const ContainerForm = styled.form`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
   }
   button {
     width: 100%;
