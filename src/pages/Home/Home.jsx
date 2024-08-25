@@ -5,9 +5,6 @@ const Home = () => {
   return (
     <ContainerHome>
       <div>
-        <img src="../../images/heroVecinosOpinan.jpg" alt="Hero" />
-      </div>
-      <div>
         <h1>
           Bienvenidos a <span>Vecinos Opinan</span>
         </h1>

@@ -11,12 +11,6 @@ export const ContainerHome = styled.div`
   gap: 20px;
   background-color: var(--fondo);
   color: var(--blanco);
-  img {
-    width: 350px;
-    height: 350px;
-    border-radius: 15px;
-    border: none;
-  }
   h1 {
     font-size: 2.5rem;
   }
