@@ -41,6 +41,11 @@ export const MapResponsive = styled.div`
     width: 100%;
     position: absolute;
   }
+
+  @media (max-width: 800px) {
+    height: auto;
+    width: 90vw;
+  }
 `;
 
 export const ContainerBarriosList = styled.div`
