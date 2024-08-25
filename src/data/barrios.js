@@ -1,7 +1,7 @@
 export const Barrios = [
   {
     id: 0,
-    nombre: " Seleccioná tu barrio",
+    nombre: " SELECCIONA TU BARRIO",
   },
   {
     id: 1,
