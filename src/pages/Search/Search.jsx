@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ContainerSearch,
   MapResponsive,
@@ -8,21 +8,67 @@ import Iframe from "react-iframe";
 import { Barrios } from "../../data/barrios";
 
 const Search = () => {
+  const [userLocation, setUserLocation] = useState(null);
+
+  let linkMapWithLocation =
+    "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ehbc=2E312F";
+
+  if (userLocation == null) {
+    setUserLocation(linkMapWithLocation);
+  }
+
+  // const getUserLocation = () => {
+  //   if (navigator.geolocation) {
+  //     navigator.geolocation.getCurrentPosition(
+  //       (position) => {
+  //         const { latitude, longitude } = position.coords;
+  //         setUserLocation({ latitude, longitude });
+
+  //         if (userLocation !== null) {
+  //           linkMapWithLocation = `https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ehbc=2E312F&ll=${userLocation.latitude}%2C${userLocation.longitude}&z=11`;
+  //         }
+  //       },
+  //       (error) => {
+  //         console.log("Error al obtener la localización del usuario:", error);
+  //       }
+  //     );
+  //   } else {
+  //     console.log("La geolocalización no es soportada por este navegador.");
+  //   }
+
+  //   return linkMapWithLocation;
+  // };
+
+  const buscarBarrio = (e) => {
+    let index = e.target.selectedIndex;
+    //console.log(e.target.options[index].text); // obtiene el texto de la opción seleccionada
+    Barrios.map((barrio) => {
+      return e.target.options[index].text === barrio.nombre
+        ? setUserLocation(barrio.ubicacion)
+        : null;
+    });
+  };
+
   return (
     <ContainerSearch>
       <ContainerBarriosList>
         <h2>Buscá tu barrio</h2>
         <form action="#">
-          <select name="barrios" id="barrios">
+          <select name="barrios" id="barrios" onChange={buscarBarrio}>
             {Barrios?.map((barrio) => {
-              return <option value={barrio.nombre}>{barrio.nombre}</option>;
+              return (
+                <option value={barrio.nombre} key={barrio.nombre}>
+                  {barrio.nombre}
+                </option>
+              );
             })}
           </select>
         </form>
+        {/* <button onClick={getUserLocation()}>¿Dónde estoy?</button> */}
       </ContainerBarriosList>
       <MapResponsive>
         {Iframe ? (
-          <Iframe src="https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ehbc=2E312F"></Iframe>
+          <Iframe src={userLocation}></Iframe>
         ) : (
           <p>Cargando mapa...</p>
         )}

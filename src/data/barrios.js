@@ -2,18 +2,26 @@ export const Barrios = [
   {
     id: 1,
     nombre: "AMPLIACIÓN PALMAR",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.38779557250945%2C-64.11881755&z=17",
   },
   {
     id: 2,
     nombre: "VILLA CLAUDINA",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.388879679238062%2C-64.1225861&z=17",
   },
   {
     id: 3,
     nombre: "PALMAR",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.390551126048546%2C-64.12457624999999&z=16",
   },
   {
     id: 4,
     nombre: "YOFRE I",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.391817031437064%2C-64.129493&z=16",
   },
   {
     id: 5,
@@ -154,6 +162,8 @@ export const Barrios = [
   {
     id: 39,
     nombre: "JUAN B. JUSTO",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.35992749999999%2C-64.18198024444445&z=16",
   },
   {
     id: 40,
@@ -1330,10 +1340,6 @@ export const Barrios = [
   {
     id: 331,
     nombre: "CIUDAD PARQUE DE LAS ROSAS",
-  },
-  {
-    id: 332,
-    nombre: "LA TOMA",
   },
   {
     id: 333,
