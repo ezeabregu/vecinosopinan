@@ -257,7 +257,7 @@ export const Barrios = [
   },
   {
     id: 43,
-    nombre: "PARQUE JORGUE NEWBERY",
+    nombre: "PARQUE JORGE NEWBERY",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.351219268749993%2C-64.183042625&z=16",
   },
