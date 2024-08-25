@@ -449,7 +449,7 @@ export const Barrios = [
   },
   {
     id: 85,
-    nombre: "ELLEJANDRO CENTENO",
+    nombre: "ALEJANDRO CENTENO",
   },
   {
     id: 86,
@@ -461,7 +461,7 @@ export const Barrios = [
   },
   {
     id: 88,
-    nombre: "BARRIO SAN JORGE",
+    nombre: "SAN JORGE",
   },
   {
     id: 89,
@@ -529,11 +529,11 @@ export const Barrios = [
   },
   {
     id: 105,
-    nombre: "UMBÚ",
+    nombre: "OMBÚ",
   },
   {
     id: 106,
-    nombre: "BARRIO PARQUE TABLADA",
+    nombre: "PARQUE TABLADA",
   },
   {
     id: 107,
@@ -1501,7 +1501,7 @@ export const Barrios = [
   },
   {
     id: 349,
-    nombre: "RESIDENCIAL SAN JORGUE",
+    nombre: "RESIDENCIAL SAN JORGE",
   },
   {
     id: 350,

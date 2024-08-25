@@ -54,7 +54,6 @@ export const ContainerForm = styled.form`
     background-color: var(--fondoOscuro);
     border: 1px solid var(--blanco);
     color: var(--blanco);
-    border-radius: 5px;
     padding: 10px 20px;
   }
   label {
