@@ -49,13 +49,17 @@ const Search = () => {
     });
   };
 
+  const barriosOrdenados = [...Barrios].sort((b, a) =>
+    a.nombre < b.nombre ? 1 : a.nombre > b.nombre ? -1 : 0
+  );
+
   return (
     <ContainerSearch>
       <ContainerBarriosList>
         <h2>Buscá tu barrio</h2>
         <form action="#">
           <select name="barrios" id="barrios" onChange={buscarBarrio}>
-            {Barrios?.map((barrio) => {
+            {barriosOrdenados?.map((barrio) => {
               return (
                 <option value={barrio.nombre} key={barrio.nombre}>
                   {barrio.nombre}
