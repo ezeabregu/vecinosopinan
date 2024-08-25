@@ -71,7 +71,7 @@ export const Barrios = [
   },
   {
     id: 12,
-    nombre: "ZEPA",
+    nombre: "ZEPA A",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.388883524999994%2C-64.110169125&z=18",
   },
@@ -101,7 +101,7 @@ export const Barrios = [
   },
   {
     id: 17,
-    nombre: "TALLERES DEL ESTE",
+    nombre: "TALLERES ESTE",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.388987778841084%2C-64.1532766&z=15",
   },

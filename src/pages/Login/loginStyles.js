@@ -6,4 +6,43 @@ export const ContainerLogin = styled.div`
   padding: 2rem;
   background-color: var(--fondo);
   color: var(--blanco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ContainerForm = styled.form`
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--fondoOscuro);
+  display: flex;
+  justify-content: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  button {
+    background-color: var(--fondoOscuro);
+    border: 1px solid var(--blanco);
+    color: var(--blanco);
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+      color: var(--fondoOscuro);
+    }
+  }
+  input {
+    background-color: var(--fondoOscuro);
+    border: 1px solid var(--blanco);
+    color: var(--blanco);
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
 `;
