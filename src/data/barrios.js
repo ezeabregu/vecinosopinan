@@ -306,54 +306,79 @@ export const Barrios = [
   {
     id: 51,
     nombre: "PATRIA",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.408966819999996%2C-64.16060408&z=16",
   },
   {
     id: 52,
     nombre: "HOGAR PROPIO",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.407407582992004%2C-64.15365360000001&z=16",
   },
   {
     id: 53,
     nombre: "PARQUE DEL ESTE",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.404331837988956%2C-64.14341529999997&z=15",
   },
   {
     id: 54,
     nombre: "YAPEYÚ",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.4128037112831%2C-64.14964244999999&z=16",
   },
   {
     id: 55,
     nombre: "JUNIORS",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.41969253846152%2C-64.16394101538461&z=16",
   },
   {
     id: 56,
     nombre: "CENTRO",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.41783420955095%2C-64.18058825&z=15",
   },
   {
     id: 57,
     nombre: "NUEVA CORDOBA",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.429046120000024%2C-64.18677794666668&z=15",
   },
   {
     id: 58,
     nombre: "ALTA CORDOBA",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.390840818333356%2C-64.18334999333332&z=14",
   },
   {
     id: 59,
     nombre: "VILLA CABRERA",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.387108316849297%2C-64.21259649999999&z=16",
   },
   {
     id: 60,
     nombre: "LOS PARAISOS",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.38290843076923%2C-64.19514368461537&z=16",
   },
   {
     id: 61,
     nombre: "BAJO GALÁN",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.393608894736847%2C-64.20202571052633&z=16",
   },
   {
     id: 62,
     nombre: "PROVIDENCIA",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.400654507692323%2C-64.19913400384615&z=16 ",
   },
   {
     id: 63,
     nombre: "DUCASSE",
+    ubicacion: "",
   },
   {
     id: 64,
