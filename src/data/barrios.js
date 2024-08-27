@@ -299,7 +299,7 @@ export const Barrios = [
   },
   {
     id: 50,
-    nombre: "BARRIO GENERAL PAZ",
+    nombre: "GENERAL PAZ",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.41330609999997%2C-64.16596896153845&z=16",
   },
@@ -504,10 +504,6 @@ export const Barrios = [
     nombre: "GUIÑAZÚ",
   },
   {
-    id: 99,
-    nombre: "AEROPUERTO",
-  },
-  {
     id: 100,
     nombre: "CERRO DE LAS ROSAS",
   },
@@ -517,7 +513,7 @@ export const Barrios = [
   },
   {
     id: 102,
-    nombre: "BARRIO BAJO PALERMO",
+    nombre: "BAJO PALERMO",
   },
   {
     id: 103,
@@ -693,7 +689,7 @@ export const Barrios = [
   },
   {
     id: 146,
-    nombre: "BARRIO LOS ALAMOS",
+    nombre: "LOS ALAMOS",
   },
   {
     id: 147,
