@@ -11,16 +11,19 @@ export const ContainerHome = styled.div`
   gap: 20px;
   background-color: var(--fondo);
   color: var(--blanco);
-  h1 {
+  h2 {
     font-size: 2.5rem;
   }
 
-  span {
+  h1 {
+    font-size: 5rem;
     font-weight: 800;
     letter-spacing: 2px;
-    background: linear-gradient(#00112c, var(--fondo));
+    background: linear-gradient(#00112c, var(--fondoOscuro));
     -webkit-background-clip: text;
     color: transparent;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: var(--blanco);
   }
   p {
     max-width: 650px;

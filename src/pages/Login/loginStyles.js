@@ -19,6 +19,9 @@ export const ContainerForm = styled.form`
   background-color: var(--fondoOscuro);
   display: flex;
   justify-content: center;
+  h3 {
+    font-size: 1.2rem;
+  }
   div {
     display: flex;
     flex-direction: column;
@@ -51,9 +54,9 @@ export const ContainerForm = styled.form`
     }
   }
   input {
-    background-color: var(--fondoOscuro);
+    background-color: var(--blanco);
     border: 1px solid var(--blanco);
-    color: var(--blanco);
+    color: #000;
     padding: 10px 20px;
   }
   label {

@@ -6,7 +6,7 @@ const Login = () => {
     <ContainerLogin>
       <ContainerForm>
         <form action="">
-          <h3>Iniciar sesión</h3>
+          <h3>INICIAR SESIÓN</h3>
           <div>
             <label htmlFor="">Correo electrónico</label>
             <input type="text" placeholder="Ingrese email" />
