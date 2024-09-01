@@ -1495,7 +1495,7 @@ export const Barrios = [
   },
   {
     id: 272,
-    nombre: "COUNTRY  ̈AIRES DEL SUR",
+    nombre: "COUNTRY AIRES DEL SUR",
   },
   {
     id: 273,
