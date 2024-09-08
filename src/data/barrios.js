@@ -1806,262 +1806,332 @@ export const Barrios = [
   {
     id: 300,
     nombre: "CABO FARIÑA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46274177553938%2C-64.20619035&z=17",
   },
   {
     id: 301,
     nombre: "PARQUE HORIZONTE SUR",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.464023555694574%2C-64.20799334999998&z=17",
   },
   {
     id: 302,
     nombre: "AMPLIACIÓN CABO FARIÑA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46322560000001%2C-64.21343309999999&z=17",
   },
   {
     id: 303,
     nombre: "PARQUE VELEZ SARFIELD",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.43963653333332%2C-64.20348388666666&z=16",
   },
   {
     id: 304,
     nombre: "COLINAS DE VELEZ SARFIELD",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.43799645615045%2C-64.1995855&z=16",
   },
   {
     id: 305,
     nombre: "VILLA ACHÁVAL",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.436026562391763%2C-64.20468784999998&z=17",
   },
   {
     id: 306,
     nombre: "SÚAREZ",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.43831142608696%2C-64.20992920434782&z=16",
   },
   {
     id: 307,
     nombre: "FERRER",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.44394189999997%2C-64.21230419999999&z=17",
   },
   {
     id: 308,
     nombre: "ALTOS DE VELEZ SARFIELD",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.448625375000002%2C-64.214123&z=16",
   },
   {
     id: 309,
     nombre: "AMPLIACIÓN VELEZ SARFIELD",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.4533847386488%2C-64.21559819999999&z=17",
   },
   {
     id: 310,
     nombre: "LOS OLMOS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.460404733333338%2C-64.21772611666667&z=16",
   },
   {
     id: 311,
     nombre: "BELLA VISTA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.430693252777786%2C-64.20393181944445&z=16",
   },
   {
     id: 312,
     nombre: "BELLA VISTA OESTE",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.432617634426435%2C-64.20766635000003&z=17",
   },
   {
     id: 313,
     nombre: "COLINAS DE BELLA VISTA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.436561855555553%2C-64.20849387777777&z=17",
   },
   {
     id: 314,
     nombre: "RESIDENCIAL OLIVOS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.432256315789445%2C-64.20993345263156&z=16",
   },
   {
     id: 315,
     nombre: "CACERES",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.43449360588517%2C-64.2008009&z=18",
   },
   {
     id: 316,
     nombre: "PARQUE CAPITAL",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.43697978333332%2C-64.21505280833333&z=16",
   },
   {
     id: 317,
-    nombre: "MARIANO BALCARSE",
-    ubicacion: "",
+    nombre: "MARIANO BALCARCE",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.433900998529385%2C-64.22170639999999&z=16",
   },
   {
     id: 318,
     nombre: "ROSEDAL",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.433972995383755%2C-64.2264659&z=16",
   },
   {
     id: 319,
     nombre: "ATE",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.434230588503645%2C-64.23063404999999&z=17",
   },
   {
     id: 320,
     nombre: "AMEGHINO SUD",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.43449522499999%2C-64.23760837500002&z=16",
   },
   {
     id: 321,
     nombre: "VILLA ADELA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.436320211111106%2C-64.24839696666668&z=16",
   },
   {
     id: 322,
     nombre: "LAS PLAYAS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.439361665433562%2C-64.24742600000002&z=17",
   },
   {
     id: 323,
     nombre: "VILLA ASPASIA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.443157575000008%2C-64.247456625&z=17",
   },
   {
     id: 324,
     nombre: "ESTACIÓN FLORES",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.44975011428571%2C-64.24865317142857&z=16",
   },
   {
     id: 325,
     nombre: "MATIENZO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.442719262499985%2C-64.23881733750001&z=16",
   },
   {
     id: 326,
     nombre: "AMPLIACION MATIENZO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.44248770749752%2C-64.22964240000002&z=17",
   },
   {
     id: 327,
     nombre: "ROSEDAL ANEXO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.439241736363627%2C-64.22940588181818&z=17",
   },
   {
     id: 328,
     nombre: "AMPLIACIÓN ROSEDAL",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.43953355714283%2C-64.22396787142856&z=16",
   },
   {
     id: 329,
     nombre: "RENÉ FAVALORO SUD",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.449257200000027%2C-64.23630006666667&z=17",
   },
   {
     id: 330,
     nombre: "NATALIA 21",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.4483071805728%2C-64.23363355&z=17",
   },
   {
     id: 331,
     nombre: "CIUDAD PARQUE DE LAS ROSAS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.448691074999992%2C-64.24108095&z=16",
   },
   {
     id: 333,
     nombre: "SOLES DEL ESTE",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.446645602897036%2C-64.23821015000001&z=18",
   },
   {
     id: 334,
     nombre: "MANANTIALES URBANIZACIÓN",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.455824799999984%2C-64.23750225333335&z=15",
   },
   {
     id: 335,
     nombre: "SMATA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.455404149435612%2C-64.22338884999999&z=16",
   },
   {
     id: 336,
     nombre: "MUTUAL DEL DOCENTE",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.45719831639847%2C-64.22364970000001&z=17",
   },
   {
     id: 337,
     nombre: "JARDINES DEL OLMO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46039767777776%2C-64.2210640888889&z=17",
   },
   {
     id: 338,
     nombre: "SOLARES DE SANTA MARIA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46099711473135%2C-64.22303940000002&z=17",
   },
   {
     id: 339,
     nombre: "PARQUE CAPITAL SUD",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.442402166666675%2C-64.21544146666666&z=16",
   },
   {
     id: 340,
     nombre: "QUINTA DE NORES",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.44471189875666%2C-64.22261190000002&z=16",
   },
   {
     id: 341,
     nombre: "MOLINO MINETTI",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.450139525317603%2C-64.2198106&z=16",
   },
   {
     id: 342,
     nombre: "AMEGHINO NORTE",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.42868607999998%2C-64.23688761999998&z=16",
   },
   {
     id: 343,
     nombre: "RESIDENCIAL SAN ROQUE",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.427920539999977%2C-64.24743366&z=15",
   },
   {
     id: 344,
     nombre: "VILLA UNION",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.424828797746013%2C-64.26536325000001&z=16",
   },
   {
     id: 345,
     nombre: "VILLA BELGRANO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.36048369444443%2C-64.25386279444444&z=15",
   },
   {
     id: 346,
     nombre: "ARGUELLO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.347193597674423%2C-64.26828388604652&z=14",
   },
   {
     id: 347,
     nombre: "VILLA WARCALDE",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.3385635636462%2C-64.29873115000001&z=15",
   },
   {
     id: 348,
     nombre: "VALLE ESCONDIDO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.37007394285716%2C-64.27997888571429&z=14",
   },
   {
     id: 349,
     nombre: "RESIDENCIAL SAN JORGE",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.36868307142857%2C-64.13122454285714&z=18",
   },
   {
     id: 350,
     nombre: "VILLA ESQUIÚ",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.360669068181824%2C-64.11592740454545&z=15",
   },
   {
     id: 351,
     nombre: "VILLA LIBERTADOR",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.47815772399998%2C-64.21856180800002&z=15",
   },
   {
     id: 352,
     nombre: "BAJO GENERAL PAZ",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.41532974999998%2C-64.1592619&z=17",
+  },
+  {
+    id: 353,
+    nombre: "ZEPA C",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.392576845454514%2C-64.1037104181818&z=16",
+  },
+  {
+    id: 354,
+    nombre: "ZEPA B",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.390608468044313%2C-64.10270165&z=17",
+  },
+  {
+    id: 355,
+    nombre: "1° DE JULIO",
+    ubicacion:
+      "https://www.google.com/maps/d/viewer?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.374138216666672%2C-64.07860026666665&z=16",
   },
 ];
 
