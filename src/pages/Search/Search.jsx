@@ -11,6 +11,7 @@ import RatingForm from "../../components/ratingForm/RatingForm";
 const Search = () => {
   const [userLocation, setUserLocation] = useState(null);
   const [barrioSelectedRating, setBarrioSelectedRating] = useState(false);
+  const [nombreBarrio, setNombreBarrio] = useState();
 
   let linkMapWithLocation =
     "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ehbc=2E312F";
@@ -46,7 +47,9 @@ const Search = () => {
     //console.log(e.target.options[index].text); // obtiene el texto de la opción seleccionada
     Barrios.map((barrio) => {
       return e.target.options[index].text === barrio.nombre
-        ? (setUserLocation(barrio.ubicacion), setBarrioSelectedRating(true))
+        ? (setUserLocation(barrio.ubicacion),
+          setBarrioSelectedRating(true),
+          setNombreBarrio(barrio.nombre))
         : null;
     });
   };
@@ -73,7 +76,7 @@ const Search = () => {
         </form>
         {/* <button onClick={getUserLocation()}>¿Dónde estoy?</button> */}
       </ContainerBarriosList>
-      {barrioSelectedRating ? <RatingForm /> : null}
+      {barrioSelectedRating ? <RatingForm nombreBarrio={nombreBarrio} /> : null}
       <MapResponsive>
         {Iframe ? (
           <Iframe

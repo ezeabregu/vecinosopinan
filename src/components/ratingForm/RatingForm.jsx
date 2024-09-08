@@ -6,7 +6,7 @@ import {
 } from "./ratingFormStyles";
 import { FaStar } from "react-icons/fa";
 
-const RatingForm = () => {
+const RatingForm = ({ nombreBarrio }) => {
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -22,12 +22,18 @@ const RatingForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Aquí puedes manejar el envío del formulario, como llamar a una API
+    setTimeout(() => {
+      window.location.reload(true);
+    }, 1000);
     setSubmitted(true);
   };
+
+  console.log(nombreBarrio);
+
   return (
     <>
       <ContainerRatingFormStyled>
-        <h2>Puntúa el barrio</h2>
+        <h2>{`Puntúa el barrio ${nombreBarrio}`}</h2>
         <form onSubmit={handleSubmit}>
           <ContainerStarStyled>
             {[1, 2, 3, 4, 5].map((star) => (
@@ -42,7 +48,7 @@ const RatingForm = () => {
           </ContainerStarStyled>
           <ContainerCommentStyled>
             <textarea
-              placeholder="Deja tu comentario aquí..."
+              placeholder="Dejá tu comentario aquí..."
               value={comment}
               onChange={handleCommentChange}
             />

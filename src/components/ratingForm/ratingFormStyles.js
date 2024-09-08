@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 export const ContainerRatingFormStyled = styled.div`
-  width: 300px;
+  width: 400px;
   margin: 0 auto;
   text-align: center;
+  padding: 3rem;
+  border: 1px solid white;
+  border-radius: 10px;
 
   button {
     padding: 10px 20px;
