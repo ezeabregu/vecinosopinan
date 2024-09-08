@@ -6,9 +6,11 @@ import {
 } from "./searchStyles";
 import Iframe from "react-iframe";
 import { Barrios } from "../../data/barrios";
+import RatingForm from "../../components/ratingForm/RatingForm";
 
 const Search = () => {
   const [userLocation, setUserLocation] = useState(null);
+  const [barrioSelectedRating, setBarrioSelectedRating] = useState(false);
 
   let linkMapWithLocation =
     "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ehbc=2E312F";
@@ -44,7 +46,7 @@ const Search = () => {
     //console.log(e.target.options[index].text); // obtiene el texto de la opción seleccionada
     Barrios.map((barrio) => {
       return e.target.options[index].text === barrio.nombre
-        ? setUserLocation(barrio.ubicacion)
+        ? (setUserLocation(barrio.ubicacion), setBarrioSelectedRating(true))
         : null;
     });
   };
@@ -71,6 +73,7 @@ const Search = () => {
         </form>
         {/* <button onClick={getUserLocation()}>¿Dónde estoy?</button> */}
       </ContainerBarriosList>
+      {barrioSelectedRating ? <RatingForm /> : null}
       <MapResponsive>
         {Iframe ? (
           <Iframe
