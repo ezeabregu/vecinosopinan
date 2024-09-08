@@ -7,6 +7,7 @@ import {
 import Iframe from "react-iframe";
 import { Barrios } from "../../data/barrios";
 import RatingForm from "../../components/ratingForm/RatingForm";
+import { motion } from "framer-motion";
 
 const Search = () => {
   const [userLocation, setUserLocation] = useState(null);
@@ -76,7 +77,15 @@ const Search = () => {
         </form>
         {/* <button onClick={getUserLocation()}>¿Dónde estoy?</button> */}
       </ContainerBarriosList>
-      {barrioSelectedRating ? <RatingForm nombreBarrio={nombreBarrio} /> : null}
+      {barrioSelectedRating ? (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <RatingForm nombreBarrio={nombreBarrio} />
+        </motion.div>
+      ) : null}
       <MapResponsive>
         {Iframe ? (
           <Iframe
