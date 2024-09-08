@@ -2133,6 +2133,24 @@ export const Barrios = [
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.374138216666672%2C-64.07860026666665&z=16",
   },
+  {
+    id: 356,
+    nombre: "CIUDAD DE LOS NIÑOS",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.29589751155742%2C-64.17770279999999&z=17",
+  },
+  {
+    id: 357,
+    nombre: "BICENTENARIO",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.294389077777772%2C-64.18339859999998&z=17",
+  },
+  {
+    id: 358,
+    nombre: "PARQUE NORTE",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.300091483333315%2C-64.17748101666666&z=16",
+  },
 ];
 
 export const TotalBarrios = Barrios.length;
