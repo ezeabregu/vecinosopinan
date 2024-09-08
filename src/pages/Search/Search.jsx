@@ -59,6 +59,7 @@ const Search = () => {
         <h2>Buscá tu barrio</h2>
         <form action="#">
           <select name="barrios" id="barrios" onChange={buscarBarrio}>
+            <option>SELECCIONÁ TU BARRIO</option>
             {barriosOrdenados?.map((barrio) => {
               return (
                 <option value={barrio.nombre} key={barrio.nombre}>

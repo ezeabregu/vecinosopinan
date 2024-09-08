@@ -1,9 +1,5 @@
 export const Barrios = [
   {
-    id: 0,
-    nombre: " SELECCIONA TU BARRIO",
-  },
-  {
     id: 1,
     nombre: "AMPLIACIÓN PALMAR",
     ubicacion:
@@ -1235,7 +1231,7 @@ export const Barrios = [
   },
   {
     id: 205,
-    nombre: "1 DE MAYO",
+    nombre: "1° DE MAYO",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.434298904342878%2C-64.1175753&z=15",
   },
