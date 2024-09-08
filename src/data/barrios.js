@@ -2124,12 +2124,6 @@ export const Barrios = [
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.390608468044313%2C-64.10270165&z=17",
   },
   {
-    id: 355,
-    nombre: "1° DE JULIO",
-    ubicacion:
-      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.374138216666672%2C-64.07860026666665&z=16",
-  },
-  {
     id: 356,
     nombre: "CIUDAD DE LOS NIÑOS",
     ubicacion:
