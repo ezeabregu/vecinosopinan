@@ -28,8 +28,6 @@ const RatingForm = ({ nombreBarrio }) => {
     setSubmitted(true);
   };
 
-  console.log(nombreBarrio);
-
   return (
     <>
       <ContainerRatingFormStyled>

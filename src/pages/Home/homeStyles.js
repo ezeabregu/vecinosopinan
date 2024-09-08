@@ -43,7 +43,7 @@ export const ContainerHome = styled.div`
     }
     p {
       margin-top: 1rem;
-      width: 90%;
+      width: 100%;
       font-size: 1rem;
       line-height: 25px;
       text-align: justify;
