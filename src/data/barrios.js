@@ -876,12 +876,6 @@ export const Barrios = [
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.366313200000008%2C-64.160528425&z=18",
   },
   {
-    id: 146,
-    nombre: "LOS ALAMOS",
-    ubicacion:
-      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.365423784615373%2C-64.16309955384617&z=18",
-  },
-  {
     id: 147,
     nombre: "AMPLIACION LOS ALAMOS",
     ubicacion:

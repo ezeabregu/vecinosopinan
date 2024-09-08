@@ -42,8 +42,11 @@ export const ContainerHome = styled.div`
       letter-spacing: 8px;
     }
     p {
-      font-size: 0.8rem;
-      line-height: 20px;
+      margin-top: 1rem;
+      width: 90%;
+      font-size: 1rem;
+      line-height: 25px;
+      text-align: justify;
     }
   }
 `;

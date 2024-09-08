@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ContainerNavbar, NavbarSection, MenuBurger } from "./navbarStyles";
 import { useNavigate } from "react-router-dom";
-import { CiMenuKebab } from "react-icons/ci";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircle } from "react-icons/io5";
 import Menu from "./Menu/Menu";
 
@@ -16,7 +16,13 @@ const Navbar = () => {
           <p onClick={() => navigate("/")}>Vecinos Opinan</p>
 
           <ul>
-            <li onClick={() => navigate("/map")}>Buscar</li>
+            <li
+              onClick={() => {
+                navigate("/map");
+              }}
+            >
+              Buscar
+            </li>
             <li onClick={() => navigate("/about")}>Sobre nosotros</li>
             <li>
               <button onClick={() => navigate("/login")}>Iniciar sesión</button>
@@ -27,7 +33,7 @@ const Navbar = () => {
             {isOpen ? (
               <IoCloseCircle style={{ fontSize: "2rem" }} />
             ) : (
-              <CiMenuKebab style={{ fontSize: "2rem" }} />
+              <GiHamburgerMenu style={{ fontSize: "2rem" }} />
             )}
           </MenuBurger>
         </NavbarSection>
