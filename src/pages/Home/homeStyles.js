@@ -35,10 +35,10 @@ export const ContainerHome = styled.div`
   @media (max-width: 800px) {
     padding: 2rem;
     h1 {
-      font-size: 2rem;
+      font-size: 4rem;
     }
     span {
-      font-size: 3.5rem;
+      font-size: 4rem;
       letter-spacing: 8px;
     }
     p {
