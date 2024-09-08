@@ -31,7 +31,8 @@ const RatingForm = ({ nombreBarrio }) => {
   return (
     <>
       <ContainerRatingFormStyled>
-        <h2>{`Puntúa el barrio ${nombreBarrio}`}</h2>
+        <h2>Puntúa el barrio</h2>
+        <h2>{`${nombreBarrio}`}</h2>
         <form onSubmit={handleSubmit}>
           <ContainerStarStyled>
             {[1, 2, 3, 4, 5].map((star) => (
