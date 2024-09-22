@@ -1,19 +1,38 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { ContainerNavbar, NavbarSection, MenuBurger } from "./navbarStyles";
 import { useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircle } from "react-icons/io5";
 import Menu from "./Menu/Menu";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleOcultarMenuBurger } from "../../redux/menuBurger/menuBurgerSlice";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState();
+  const ocultarMenu = useSelector((state) => state.menuBurger.hidden);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (!ocultarMenu) {
+      dispatch(toggleOcultarMenuBurger());
+    }
+  }, [dispatch, ocultarMenu]);
+
+  const handleMenuClick = () => {
+    dispatch(toggleOcultarMenuBurger());
+  };
 
   return (
     <>
       <ContainerNavbar>
         <NavbarSection>
-          <p onClick={() => navigate("/")}>Vecinos Opinan</p>
+          <p
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Vecinos Opinan
+          </p>
 
           <ul>
             <li
@@ -29,8 +48,8 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <MenuBurger onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? (
+          <MenuBurger onClick={() => handleMenuClick()}>
+            {!ocultarMenu ? (
               <IoCloseCircle style={{ fontSize: "2rem" }} />
             ) : (
               <GiHamburgerMenu style={{ fontSize: "2rem" }} />
@@ -38,7 +57,7 @@ const Navbar = () => {
           </MenuBurger>
         </NavbarSection>
       </ContainerNavbar>
-      {isOpen ? <Menu /> : null}
+      {!ocultarMenu ? <Menu /> : null}
     </>
   );
 };

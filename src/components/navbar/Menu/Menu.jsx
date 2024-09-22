@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { LinkContainerStyled, NavLinkContainer } from "./menuStyles";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleOcultarMenuBurger } from "../../../redux/menuBurger/menuBurgerSlice";
 
-const menuStyles = () => {
+const Menu = () => {
+  const ocultarMenu = useSelector((state) => state.menuBurger.hidden);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (!ocultarMenu) {
+      dispatch(toggleOcultarMenuBurger());
+    }
+  }, [dispatch, ocultarMenu]);
+
+  const handleMenuClick = () => {
+    dispatch(toggleOcultarMenuBurger());
+  };
+
   return (
     <>
-      <LinkContainerStyled>
-        <NavLinkContainer to="/map">Buscar</NavLinkContainer>
-        <NavLinkContainer to="/about">Sobre nosotros</NavLinkContainer>
-        <NavLinkContainer to="/login">Iniciar sesión</NavLinkContainer>
-      </LinkContainerStyled>
+      {!ocultarMenu && (
+        <LinkContainerStyled>
+          <NavLinkContainer to="/map" onClick={() => handleMenuClick()}>
+            Buscar
+          </NavLinkContainer>
+          <NavLinkContainer to="/about" onClick={() => handleMenuClick()}>
+            Sobre nosotros
+          </NavLinkContainer>
+          <NavLinkContainer to="/login" onClick={() => handleMenuClick()}>
+            Iniciar sesión
+          </NavLinkContainer>
+        </LinkContainerStyled>
+      )}
     </>
   );
 };
 
-export default menuStyles;
+export default Menu;

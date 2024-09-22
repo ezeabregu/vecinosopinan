@@ -33,7 +33,7 @@ export const ContainerHome = styled.div`
   }
 
   @media (max-width: 800px) {
-    padding: 2rem;
+    padding: 4rem;
     h1 {
       font-size: 4rem;
     }
@@ -44,7 +44,7 @@ export const ContainerHome = styled.div`
     p {
       margin-top: 1rem;
       width: 100%;
-      font-size: 1rem;
+      font-size: 1.3rem;
       line-height: 25px;
       text-align: justify;
     }
