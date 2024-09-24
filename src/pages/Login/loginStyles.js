@@ -4,7 +4,7 @@ export const ContainerLogin = styled.div`
   width: 100vw;
   height: calc(100vh - 60px);
   padding: 2rem;
-  background-color: var(--fondo);
+  background-color: var(--NoBlanco);
   color: var(--blanco);
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ export const ContainerForm = styled.form`
   height: 300px;
   padding: 20px;
   border-radius: 10px;
-  background-color: var(--fondoOscuro);
+  background-color: var(--amarilloOscuro);
   display: flex;
   justify-content: center;
   h3 {
@@ -42,14 +42,14 @@ export const ContainerForm = styled.form`
   }
   button {
     width: 100%;
-    background-color: #fff;
+    background-color: var(--amarilloOscuro);
     border: 1px solid var(--blanco);
-    color: var(--fondoOscuro);
+    color: var(--blanco);
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
     &:hover {
-      background-color: var(--fondoOscuro);
+      background-color: var(--amarillo);
       color: #fff;
     }
   }

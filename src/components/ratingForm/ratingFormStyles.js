@@ -5,21 +5,25 @@ export const ContainerRatingFormStyled = styled.div`
   margin: 0 auto;
   text-align: center;
   padding: 3rem;
-  border: 1px solid white;
+  border: 1px solid var(--amarilloOscuro);
   border-radius: 10px;
 
   button {
     padding: 10px 20px;
     border: none;
-    background-color: var(--fondoOscuro);
+    background-color: var(--amarilloOscuro);
     color: white;
     border-radius: 5px;
     cursor: pointer;
   }
 
   button:hover {
-    background-color: var(--fondoOscuro);
+    background-color: var(--amarilloOscuro);
     border: 1px solid white;
+  }
+
+  p {
+    color: var(--amarilloOscuro);
   }
 `;
 
@@ -29,7 +33,7 @@ export const ContainerStarStyled = styled.div`
 
   .star {
     cursor: pointer;
-    color: white;
+    color: gray;
     transition: color 0.3s;
   }
 
@@ -44,7 +48,7 @@ export const ContainerCommentStyled = styled.div`
     width: 100%;
     height: 100px;
     padding: 0.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--amarilloOscuro);
     border-radius: 4px;
   }
 `;

@@ -4,8 +4,8 @@ export const ContainerAbout = styled.div`
   width: 100vw;
   height: auto;
   padding: 2rem;
-  background-color: var(--fondo);
-  color: var(--blanco);
+  background-color: var(--NoBlanco);
+  color: #131415;
   display: flex;
   justify-content: center;
   align-items: center;

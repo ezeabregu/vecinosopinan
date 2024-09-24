@@ -5,21 +5,25 @@ const Login = () => {
   return (
     <ContainerLogin>
       <ContainerForm>
-        <form action="">
+        <form>
           <h3>INICIAR SESIÓN</h3>
           <div>
             <label htmlFor="">Correo electrónico</label>
-            <input type="text" placeholder="Ingrese email" />
+            <input type="email" name="email" placeholder="Ingrese email" />
           </div>
           <div>
             <label htmlFor="">Contraseña</label>
-            <input type="password" placeholder="Ingrese contraseña" />
+            <input
+              type="password"
+              name="password"
+              placeholder="Ingrese contraseña"
+            />
           </div>
           <div className="divRecordar">
             <input type="checkbox" name="" id="" />
             <label htmlFor=""> Recordarme</label>
           </div>
-          <button>Inicia sesión</button>
+          <button type="submit">Inicia sesión</button>
         </form>
       </ContainerForm>
     </ContainerLogin>

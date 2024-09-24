@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerFooter = styled.div`
-  background-color: var(--fondoOscuro);
+  background-color: var(--amarilloOscuro);
   color: var(--blanco);
   padding: 2rem;
   display: flex;

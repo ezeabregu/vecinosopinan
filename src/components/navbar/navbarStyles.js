@@ -7,9 +7,11 @@ export const ContainerNavbar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--fondoOscuro);
+  background-color: var(--amarilloOscuro);
   color: var(--blanco);
 `;
+
+export const ContainerIconHome = styled.div``;
 
 export const NavbarSection = styled.div`
   max-width: 1300px;
@@ -33,12 +35,16 @@ export const NavbarSection = styled.div`
   }
 
   button {
-    background-color: var(--fondoOscuro);
+    background-color: var(--amarilloOscuro);
     border: 1px solid var(--blanco);
     color: var(--blanco);
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+
+    &:hover {
+      background-color: var(--amarillo);
+    }
   }
 
   @media (max-width: 800px) {

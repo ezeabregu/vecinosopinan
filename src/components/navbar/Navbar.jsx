@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
-import { ContainerNavbar, NavbarSection, MenuBurger } from "./navbarStyles";
+import {
+  ContainerNavbar,
+  NavbarSection,
+  MenuBurger,
+  ContainerIconHome,
+} from "./navbarStyles";
 import { useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircle } from "react-icons/io5";
@@ -26,13 +31,15 @@ const Navbar = () => {
     <>
       <ContainerNavbar>
         <NavbarSection>
-          <p
+          <ContainerIconHome
             onClick={() => {
               navigate("/");
             }}
           >
-            Vecinos Opinan
-          </p>
+            <p>
+              <strong>VECINOS OPINAN</strong>
+            </p>
+          </ContainerIconHome>
 
           <ul>
             <li
@@ -44,7 +51,9 @@ const Navbar = () => {
             </li>
             <li onClick={() => navigate("/about")}>Sobre nosotros</li>
             <li>
-              <button onClick={() => navigate("/login")}>Iniciar sesión</button>
+              <button onClick={() => navigate("/login")}>
+                <strong>Iniciar sesión</strong>
+              </button>
             </li>
           </ul>
 

@@ -5,8 +5,8 @@ export const ContainerSearch = styled.div`
   //height: calc(100vh - 60px);
   height: auto;
   padding: 2rem;
-  background-color: var(--fondo);
-  color: var(--blanco);
+  background-color: var(--NoBlanco);
+  color: var(--amarilloOscuro);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -56,10 +56,11 @@ export const ContainerBarriosList = styled.div`
   gap: 1rem;
 
   select {
-    border: none;
+    border: 1px solid var(--amarilloOscuro);
     border-radius: 5px;
     padding: 10px;
-    background-color: var(--blanco);
+    background-color: var(--amarilloOscuro);
+    color: var(--NoBlanco);
     font-size: 1rem;
     font-weight: 500;
     scrollbar-width: thin;
