@@ -48,6 +48,20 @@ export const ContainerParrafo = styled.div`
     align-items: center;
     gap: 15px;
   }
+
+  strong {
+    color: var(--amarilloOscuro);
+  }
+
+  @media (max-width: 800px) {
+    strong {
+      color: var(--amarilloOscuro);
+    }
+
+    li {
+      align-items: start;
+    }
+  }
 `;
 
 export const ContainerTitle = styled.div`
@@ -55,7 +69,8 @@ export const ContainerTitle = styled.div`
   @media (max-width: 800px) {
     display: block;
     label {
-      font-size: 3rem;
+      color: var(--amarilloOscuro);
+      font-size: 2rem;
       font-weight: 700;
     }
   }

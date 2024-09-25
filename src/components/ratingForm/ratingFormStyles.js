@@ -25,6 +25,9 @@ export const ContainerRatingFormStyled = styled.div`
   p {
     color: var(--amarilloOscuro);
   }
+
+  @media (min-width: 801px) {
+  }
 `;
 
 export const ContainerStarStyled = styled.div`
