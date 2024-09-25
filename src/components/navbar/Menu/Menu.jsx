@@ -22,13 +22,13 @@ const Menu = () => {
       {!ocultarMenu && (
         <LinkContainerStyled>
           <NavLinkContainer to="/map" onClick={() => handleMenuClick()}>
-            Buscar
+            <strong>BUSCAR</strong>
           </NavLinkContainer>
           <NavLinkContainer to="/about" onClick={() => handleMenuClick()}>
-            Sobre nosotros
+            <strong>SOBRE NOSOTROS</strong>
           </NavLinkContainer>
           <NavLinkContainer to="/login" onClick={() => handleMenuClick()}>
-            Iniciar sesión
+            <strong>INICIAR SESIÓN</strong>
           </NavLinkContainer>
         </LinkContainerStyled>
       )}

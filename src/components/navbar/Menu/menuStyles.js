@@ -5,9 +5,9 @@ export const LinkContainerStyled = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--fondoOscuro);
+  background-color: var(--amarilloOscuro);
   color: var(--blanco);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -20,5 +20,5 @@ export const LinkContainerStyled = styled.div`
 export const NavLinkContainer = styled(NavLink)`
   text-decoration: none;
   color: var(--blanco);
-  padding: 0.6rem;
+  padding: 0.7rem;
 `;

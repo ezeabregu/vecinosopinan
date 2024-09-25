@@ -37,9 +37,9 @@ export const ContainerHeroText = styled.div`
   padding: 0 5rem;
 
   h1 {
-    font-size: 3.1rem;
+    font-size: 3rem;
     font-weight: 800;
-    letter-spacing: 2px;
+    //letter-spacing: 2px;
     background: linear-gradient(var(--amarilloOscuro), var(--amarillo));
     -webkit-background-clip: text;
     color: transparent;
@@ -56,10 +56,12 @@ export const ContainerHeroText = styled.div`
 
   @media (max-width: 800px) {
     align-items: center;
+    gap: 20px;
+    margin: 1rem auto;
     width: 100%;
     padding: 20px;
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     p {
       width: 100%;

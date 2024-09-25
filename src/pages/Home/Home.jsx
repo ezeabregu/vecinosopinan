@@ -20,7 +20,7 @@ const Home = () => {
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 260, damping: 10 }}
           >
-            <h1>Vecinos Opinan</h1>
+            <h1>VECINOS OPINAN</h1>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
