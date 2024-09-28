@@ -51,7 +51,7 @@ const Navbar = () => {
             </li>
             <li onClick={() => navigate("/about")}>Sobre nosotros</li>
             <li>
-              <button onClick={() => navigate("/login")}>
+              <button onClick={() => navigate("/accounts/login")}>
                 <strong>Iniciar sesión</strong>
               </button>
             </li>

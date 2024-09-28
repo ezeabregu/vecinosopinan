@@ -4,8 +4,8 @@ export const ContainerError = styled.div`
   width: 100vw;
   height: calc(100vh - 60px);
   padding: 2rem;
-  background-color: var(--fondo);
-  color: var(--blanco);
+  background-color: var(--NoBlanco);
+  color: var(--amarilloOscuro);
   display: flex;
   justify-content: center;
   align-items: center;

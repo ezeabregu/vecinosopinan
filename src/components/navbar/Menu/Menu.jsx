@@ -27,7 +27,10 @@ const Menu = () => {
           <NavLinkContainer to="/about" onClick={() => handleMenuClick()}>
             <strong>SOBRE NOSOTROS</strong>
           </NavLinkContainer>
-          <NavLinkContainer to="/login" onClick={() => handleMenuClick()}>
+          <NavLinkContainer
+            to="/accounts/login"
+            onClick={() => handleMenuClick()}
+          >
             <strong>INICIAR SESIÓN</strong>
           </NavLinkContainer>
         </LinkContainerStyled>
