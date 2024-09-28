@@ -9,18 +9,29 @@ import { Formik, Field, ErrorMessage } from "formik";
 import { validationSingup } from "../../../formik/validationSchema";
 import { initialValuesSingup } from "../../../formik/initiailValues";
 import { useNavigate } from "react-router-dom";
+import { createUser } from "../../../axios/axiosUser";
+import { useDispatch } from "react-redux";
+import { setCurrentUser } from "../../../redux/user/userSlice";
 
 const Singup = () => {
   const navigate = useNavigate();
-
+  const dispatch = useDispatch();
   return (
     <>
       <ContainerLogin>
         <Formik
           initialValues={initialValuesSingup}
           validationSchema={validationSingup}
-          onSubmit={(values) => {
-            console.log(values);
+          onSubmit={async (values, actions) => {
+            const user = await createUser(
+              values.name,
+              values.email,
+              values.password
+            );
+            actions.resetForm();
+            if (user) {
+              dispatch(setCurrentUser({ ...user.usuario, token: user.token }));
+            }
           }}
         >
           <ContainerForm>
