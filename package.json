@@ -35,6 +35,7 @@
       "react-app/jest"
     ]
   },
+  "proxy": "https://vecinos-opinan-api.vercel.app",
   "browserslist": {
     "production": [
       ">0.2%",
