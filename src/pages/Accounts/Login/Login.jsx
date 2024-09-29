@@ -9,9 +9,13 @@ import { Formik, Field, ErrorMessage } from "formik";
 import { validationLogin } from "../../../formik/validationSchema";
 import { initialValuesLogin } from "../../../formik/initiailValues";
 import { useNavigate } from "react-router-dom";
+import { loginUser } from "../../../axios/axiosUser";
+import { setCurrentUser } from "../../../redux/user/userSlice";
+import { useDispatch } from "react-redux";
 
 const Login = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -19,8 +23,18 @@ const Login = () => {
         <Formik
           initialValues={initialValuesLogin}
           validationSchema={validationLogin}
-          onSubmit={(values) => {
-            console.log(values);
+          onSubmit={async (values, actions) => {
+            const user = await loginUser(values.email, values.password);
+            if (user) {
+              dispatch(
+                setCurrentUser({
+                  ...user.usuario,
+                  token: user.token,
+                })
+              );
+            }
+            actions.resetForm();
+            navigate("/accounts/account");
           }}
         >
           <ContainerForm>
