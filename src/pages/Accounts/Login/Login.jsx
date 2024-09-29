@@ -32,9 +32,9 @@ const Login = () => {
                   token: user.token,
                 })
               );
+              navigate("/accounts/account");
             }
             actions.resetForm();
-            navigate("/accounts/account");
           }}
         >
           <ContainerForm>

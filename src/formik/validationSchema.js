@@ -9,7 +9,6 @@ export const validationLogin = Yup.object({
 
 export const validationSingup = Yup.object({
   name: Yup.string()
-    .trim()
     .max(20, "Máximo 20 caracteres")
     .required("Debes colocar un nombre"),
   email: Yup.string()
