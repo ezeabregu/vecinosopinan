@@ -10,7 +10,7 @@ export const createUser = async (name, email, password) => {
     });
     return response.data;
   } catch (error) {
-    return alert("Ocurrió un error");
+    return alert(error.response.data.errors[0].msg);
   }
 };
 
