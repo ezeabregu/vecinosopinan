@@ -23,6 +23,8 @@ const Singup = () => {
           initialValues={initialValuesSingup}
           validationSchema={validationSingup}
           onSubmit={async (values, actions) => {
+            console.log(values);
+
             const user = await createUser(
               values.name,
               values.email,
