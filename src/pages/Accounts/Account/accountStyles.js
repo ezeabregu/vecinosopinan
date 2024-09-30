@@ -23,4 +23,15 @@ export const ContainerAccountTitle = styled.div`
       background-color: var(--amarillo);
     }
   }
+
+  input {
+    padding: 5px 20px;
+    border-radius: 10px;
+    border-color: var(--amarilloOscuro);
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 15px;
+  }
 `;
