@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ContainerAccount, ContainerAccountTitle } from "./accountStyles";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentUser } from "../../../redux/user/userSlice";
 import { useNavigate } from "react-router-dom";
 import { MdVerified } from "react-icons/md";
+import { verifyUser } from "../../../axios/axiosUser";
 
 const Account = () => {
   const currentUser = useSelector((state) => state.user.currentUser);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  console.log(currentUser.verified);
+  const [codeVerify, setCodeVerify] = useState("");
 
   return (
     <ContainerAccount>
@@ -21,7 +22,12 @@ const Account = () => {
           ) : null}
         </h2>
         {currentUser.verified === true ? null : (
-          <input type="text" placeholder="Verificar cuenta" />
+          <input
+            type="text"
+            placeholder="Verificar cuenta"
+            value={codeVerify}
+            onChange={(e) => setCodeVerify(e.target.value)}
+          />
         )}
         <button
           onClick={() => {

@@ -8,6 +8,8 @@ const Menu = () => {
   const currentUser = useSelector((state) => state.user.currentUser);
   const dispatch = useDispatch();
 
+  console.log(currentUser);
+
   useEffect(() => {
     if (!ocultarMenu) {
       dispatch(toggleOcultarMenuBurger());
@@ -33,7 +35,7 @@ const Menu = () => {
               to="/accounts/account"
               onClick={() => handleMenuClick()}
             >
-              <strong>{currentUser.name.toUpperCase()}</strong>
+              <strong>{currentUser?.name?.toUpperCase()}</strong>
             </NavLinkContainer>
           ) : (
             <NavLinkContainer

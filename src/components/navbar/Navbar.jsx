@@ -54,7 +54,7 @@ const Navbar = () => {
             <li>
               {currentUser ? (
                 <label onClick={() => navigate("/accounts/account")}>
-                  {currentUser.name.toUpperCase()}
+                  {currentUser?.name?.toUpperCase()}
                 </label>
               ) : (
                 <button onClick={() => navigate("/accounts/login")}>
