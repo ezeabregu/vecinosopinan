@@ -5,6 +5,7 @@ import { toggleOcultarMenuBurger } from "../../../redux/menuBurger/menuBurgerSli
 
 const Menu = () => {
   const ocultarMenu = useSelector((state) => state.menuBurger.hidden);
+  const currentUser = useSelector((state) => state.user.currentUser);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -27,12 +28,21 @@ const Menu = () => {
           <NavLinkContainer to="/about" onClick={() => handleMenuClick()}>
             <strong>SOBRE NOSOTROS</strong>
           </NavLinkContainer>
-          <NavLinkContainer
-            to="/accounts/login"
-            onClick={() => handleMenuClick()}
-          >
-            <strong>INICIAR SESIÓN</strong>
-          </NavLinkContainer>
+          {currentUser ? (
+            <NavLinkContainer
+              to="/accounts/account"
+              onClick={() => handleMenuClick()}
+            >
+              <strong>{currentUser.name.toUpperCase()}</strong>
+            </NavLinkContainer>
+          ) : (
+            <NavLinkContainer
+              to="/accounts/login"
+              onClick={() => handleMenuClick()}
+            >
+              <strong>INICIAR SESIÓN</strong>
+            </NavLinkContainer>
+          )}
         </LinkContainerStyled>
       )}
     </>

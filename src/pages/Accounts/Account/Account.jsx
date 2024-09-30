@@ -10,7 +10,6 @@ const Account = () => {
   const dispatch = useDispatch();
   return (
     <ContainerAccount>
-      <h2>Inicio de sesion exitoso</h2>
       <h2>Bienvenido {currentUser.name}</h2>
       <button
         onClick={() => {

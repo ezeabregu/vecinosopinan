@@ -47,6 +47,10 @@ export const NavbarSection = styled.div`
     }
   }
 
+  label {
+    cursor: pointer;
+  }
+
   @media (max-width: 800px) {
     ul {
       display: none;

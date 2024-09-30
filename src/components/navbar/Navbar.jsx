@@ -15,6 +15,7 @@ import { toggleOcultarMenuBurger } from "../../redux/menuBurger/menuBurgerSlice"
 const Navbar = () => {
   const navigate = useNavigate();
   const ocultarMenu = useSelector((state) => state.menuBurger.hidden);
+  const currentUser = useSelector((state) => state.user.currentUser);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -51,9 +52,15 @@ const Navbar = () => {
             </li>
             <li onClick={() => navigate("/about")}>Sobre nosotros</li>
             <li>
-              <button onClick={() => navigate("/accounts/login")}>
-                <strong>Iniciar sesión</strong>
-              </button>
+              {currentUser ? (
+                <label onClick={() => navigate("/accounts/account")}>
+                  {currentUser.name.toUpperCase()}
+                </label>
+              ) : (
+                <button onClick={() => navigate("/accounts/login")}>
+                  <strong>Iniciar sesión</strong>
+                </button>
+              )}
             </li>
           </ul>
 
