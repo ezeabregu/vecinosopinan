@@ -8,8 +8,10 @@ import Iframe from "react-iframe";
 import { Barrios } from "../../data/barrios";
 import RatingForm from "../../components/ratingForm/RatingForm";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const Search = () => {
+  const currentUser = useSelector((state) => state.user.currentUser);
   const [userLocation, setUserLocation] = useState(null);
   const [barrioSelectedRating, setBarrioSelectedRating] = useState(false);
   const [nombreBarrio, setNombreBarrio] = useState();
@@ -77,7 +79,7 @@ const Search = () => {
         </form>
         {/* <button onClick={getUserLocation()}>¿Dónde estoy?</button> */}
       </ContainerBarriosList>
-      {barrioSelectedRating ? (
+      {barrioSelectedRating && currentUser ? (
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
