@@ -90,6 +90,11 @@ export const ContainerCommentsList = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
 `;
 
 <style jsx>{`
