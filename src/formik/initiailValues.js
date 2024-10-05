@@ -10,3 +10,8 @@ export const initialValuesSingup = {
   email: "",
   password: "",
 };
+
+//Datos para validar cuenta
+export const initialValuesVerify = {
+  code: "",
+};

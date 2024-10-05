@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Form } from "formik";
 
 export const ContainerAccount = styled.div`
   min-height: calc(100vh - 80px);
@@ -35,4 +36,14 @@ export const ContainerAccountTitle = styled.div`
     flex-direction: column;
     gap: 15px;
   }
+`;
+
+export const ContainerVerify = styled(Form)`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ErrorStyled = styled.span`
+  font-size: 0.6rem;
+  color: red;
 `;
