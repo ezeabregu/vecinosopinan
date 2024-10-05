@@ -44,6 +44,9 @@ export const ContainerTabsContent = styled.div`
 `;
 
 export const ContainerCommentSeccion = styled.div`
+  form {
+    margin: 10px;
+  }
   h2 {
     font-size: 20px;
     margin-bottom: 15px;
