@@ -77,6 +77,13 @@ export const StarRating = styled.div`
     font-size: 14px;
     line-height: 1.4;
   }
+
+  .star-filled {
+    color: #ffc107;
+  }
+  .star-empty {
+    color: #e0e0e0;
+  }
 `;
 
 export const ContainerCommentsList = styled.div`
