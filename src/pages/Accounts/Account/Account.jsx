@@ -5,6 +5,7 @@ import { setCurrentUser } from "../../../redux/user/userSlice";
 import { useNavigate } from "react-router-dom";
 import { MdVerified } from "react-icons/md";
 import { verifyUser } from "../../../axios/axiosUser";
+import Comments from "../../../components/comments/Comments";
 
 const Account = () => {
   const currentUser = useSelector((state) => state.user.currentUser);
@@ -38,6 +39,7 @@ const Account = () => {
           Salir
         </button>
       </ContainerAccountTitle>
+      <Comments />
     </ContainerAccount>
   );
 };

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const ContainerAccount = styled.div`
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
+  height: auto;
   padding: 1rem;
 `;
 
