@@ -23,6 +23,18 @@ export const ContainerTabs = styled.div`
       background-color: var(--amarillo);
     }
   }
+
+  .tab {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .tab.active {
+    background-color: var(--amarilloOscuro);
+  }
 `;
 
 export const ContainerTabsContent = styled.div`
@@ -96,50 +108,3 @@ export const ContainerCommentsList = styled.div`
     gap: 5px;
   }
 `;
-
-<style jsx>{`
-  .container {
-  }
-  .profile-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  .tabs {
-  }
-  .tab {
-    padding: 10px 20px;
-    border: none;
-    background-color: #f0f0f0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  .tab.active {
-    background-color: #007bff;
-    color: white;
-  }
-  .tab-content {
-  }
-  .comments-section h2 {
-  }
-  .comment-card {
-  }
-  .comment-header {
-  }
-  .user-photo {
-  }
-  .user-info h4 {
-  }
-  .comment-date {
-  }
-  .star-rating {
-  }
-  .star-filled {
-    color: #ffc107;
-  }
-  .star-empty {
-    color: #e0e0e0;
-  }
-  .comment-text {
-  }
-`}</style>;
