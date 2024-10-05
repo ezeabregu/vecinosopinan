@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerFooter = styled.div`
   background-color: var(--amarilloOscuro);
   color: var(--blanco);
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
