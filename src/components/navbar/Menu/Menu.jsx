@@ -8,8 +8,6 @@ const Menu = () => {
   const currentUser = useSelector((state) => state.user.currentUser);
   const dispatch = useDispatch();
 
-  console.log(currentUser);
-
   useEffect(() => {
     if (!ocultarMenu) {
       dispatch(toggleOcultarMenuBurger());

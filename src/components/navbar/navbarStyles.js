@@ -49,6 +49,9 @@ export const NavbarSection = styled.div`
 
   label {
     cursor: pointer;
+    border: 1px solid var(--NoBlanco);
+    border-radius: 4px;
+    padding: 5px 8px;
   }
 
   @media (max-width: 800px) {
