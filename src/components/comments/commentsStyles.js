@@ -43,6 +43,7 @@ export const ContainerCommentsCard = styled.div`
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 5px;
+  background-color: var(--blanco);
 `;
 
 export const CommentHeader = styled.div`
@@ -76,6 +77,12 @@ export const StarRating = styled.div`
     font-size: 14px;
     line-height: 1.4;
   }
+`;
+
+export const ContainerCommentsList = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 `;
 
 <style jsx>{`

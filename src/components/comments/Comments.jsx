@@ -9,6 +9,7 @@ import {
   CommentHeader,
   UserInfo,
   StarRating,
+  ContainerCommentsList,
 } from "./commentsStyles";
 
 // Datos de ejemplo
@@ -18,16 +19,18 @@ const userComments = [
     date: "2024-03-15",
     stars: 4,
     comment: "Excelente producto",
-    photo: "/api/placeholder/50/50",
-    username: "Usuario1",
+    photo:
+      "https://w7.pngwing.com/pngs/945/530/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png",
+    username: "Nair Abregu",
   },
   {
     id: 2,
     date: "2024-03-10",
     stars: 5,
     comment: "Muy recomendable",
-    photo: "/api/placeholder/50/50",
-    username: "Usuario1",
+    photo:
+      "https://w7.pngwing.com/pngs/945/530/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png",
+    username: "Nair Abregu",
   },
 ];
 
@@ -38,16 +41,18 @@ const allComments = [
     date: "2024-03-20",
     stars: 3,
     comment: "Bueno, pero mejorable",
-    photo: "/api/placeholder/50/50",
-    username: "Usuario2",
+    photo:
+      "https://w7.pngwing.com/pngs/415/459/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png",
+    username: "Tomito",
   },
   {
     id: 4,
     date: "2024-03-05",
     stars: 5,
     comment: "Increíble servicio",
-    photo: "/api/placeholder/50/50",
-    username: "Usuario3",
+    photo:
+      "https://cdn.icon-icons.com/icons2/2643/PNG/512/female_woman_person_people_avatar_user_white_tone_icon_159359.png",
+    username: "Taykan",
   },
 ];
 
@@ -73,11 +78,11 @@ const CommentCard = ({ comment }) => (
 );
 
 const CommentsList = ({ comments }) => (
-  <div>
+  <ContainerCommentsList>
     {comments.map((comment) => (
       <CommentCard key={comment.id} comment={comment} />
     ))}
-  </div>
+  </ContainerCommentsList>
 );
 
 const Comments = () => {
