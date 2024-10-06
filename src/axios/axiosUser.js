@@ -39,3 +39,18 @@ export const verifyUser = async (email, code) => {
     return alert(error.response.data.msg);
   }
 };
+
+export const commentUser = async (email, idNeighborhood, rating, comment) => {
+  try {
+    const response = await axios.patch(`${BASE_URL}/auth/comment`, {
+      email,
+      idNeighborhood,
+      rating,
+      comment,
+    });
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    return alert(error.response.data.msg);
+  }
+};

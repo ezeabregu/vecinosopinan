@@ -5,15 +5,17 @@ import {
   ContainerCommentStyled,
 } from "./ratingFormStyles";
 import { FaStar } from "react-icons/fa";
-import axios from "axios";
-import { BASE_URL } from "../../utils/constants";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setCurrentUser } from "../../redux/user/userSlice";
+import { commentUser } from "../../axios/axiosUser";
 
 const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
   const currentUser = useSelector((state) => state.user.currentUser);
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
   const [submitted, setSubmitted] = useState(false);
+
+  const dispatch = useDispatch();
 
   const handleStarClick = (star) => {
     setRating(star);
@@ -28,21 +30,19 @@ const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
     const email = currentUser.email;
     // Aquí puedes manejar el envío del formulario, como llamar a una API
     //console.log(rating, comment, idNeighborhood);
-    try {
-      const response = await axios.patch(`${BASE_URL}/auth/comment`, {
-        email,
-        idNeighborhood,
-        rating,
-        comment,
-      });
-      //console.log("Datos enviados:", response.data);
-      return response.data;
-    } catch (error) {
-      console.error("Error al enviar datos:", error);
+    const user = await commentUser(email, idNeighborhood, rating, comment);
+    if (user) {
+      dispatch(
+        setCurrentUser({
+          ...user.usuario,
+          comment: [idNeighborhood, rating, comment],
+        })
+      );
     }
-    setTimeout(() => {
-      window.location.reload(true);
-    }, 1000);
+
+    // setTimeout(() => {
+    //   window.location.reload(true);
+    // }, 5000);
     setSubmitted(true);
   };
 
