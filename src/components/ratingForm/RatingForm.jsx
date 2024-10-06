@@ -39,10 +39,9 @@ const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
         })
       );
     }
-
-    // setTimeout(() => {
-    //   window.location.reload(true);
-    // }, 5000);
+    setTimeout(() => {
+      window.location.reload(true);
+    }, 1000);
     setSubmitted(true);
   };
 
