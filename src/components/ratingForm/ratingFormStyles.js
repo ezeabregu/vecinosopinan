@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const ContainerRatingFormStyled = styled.div`
-  width: 400px;
-  margin: 0 auto;
+  width: 90%;
+  margin: 10px auto;
   text-align: center;
-  padding: 3rem;
+  padding: 1rem;
   border: 1px solid var(--amarilloOscuro);
   border-radius: 10px;
 
@@ -26,7 +26,12 @@ export const ContainerRatingFormStyled = styled.div`
     color: var(--amarilloOscuro);
   }
 
-  @media (min-width: 801px) {
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 7px;
+    h2 {
+      font-size: 0.8rem;
+    }
   }
 `;
 
@@ -43,6 +48,10 @@ export const ContainerStarStyled = styled.div`
   .star.filled {
     color: #f39c12;
   }
+
+  @media (max-width: 800px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const ContainerCommentStyled = styled.div`
@@ -53,5 +62,6 @@ export const ContainerCommentStyled = styled.div`
     padding: 0.5rem;
     border: 1px solid var(--amarilloOscuro);
     border-radius: 4px;
+    resize: vertical;
   }
 `;

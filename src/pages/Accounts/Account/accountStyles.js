@@ -5,6 +5,11 @@ export const ContainerAccount = styled.div`
   min-height: calc(100vh - 80px);
   height: auto;
   padding: 1rem;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 10px 0px;
+  }
 `;
 
 export const ContainerAccountTitle = styled.div`

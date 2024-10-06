@@ -12,6 +12,7 @@ import {
   ContainerCommentsList,
 } from "./commentsStyles";
 import { Barrios } from "../../data/barrios";
+import RatingForm from "../../components/ratingForm/RatingForm";
 
 // Datos de ejemplo
 const userComments = [
@@ -82,7 +83,7 @@ const CommentCard = ({ comment }) => (
   </ContainerCommentsCard>
 );
 
-const CommentsList = ({ comments, idNeighborhood, nombreBarrio }) => (
+const CommentsList = ({ comments, idNeighborhood }) => (
   <ContainerCommentsList>
     {comments.map((comment) =>
       idNeighborhood === comment.neighborhood ? (
@@ -139,6 +140,7 @@ const Comments = () => {
           onClick={() => {
             setActiveTab("all-comments");
             setIdNeighborhood("");
+            setBarrioSelectedRating(false);
           }}
         >
           Todos los Comentarios
@@ -166,6 +168,14 @@ const Comments = () => {
                 })}
               </select>
             </form>
+            {barrioSelectedRating ? (
+              <div>
+                <RatingForm
+                  nombreBarrio={nombreBarrio}
+                  idNeighborhood={idNeighborhood}
+                />
+              </div>
+            ) : null}
             <CommentsList
               comments={allComments}
               idNeighborhood={idNeighborhood}

@@ -6,7 +6,7 @@ import {
 } from "./ratingFormStyles";
 import { FaStar } from "react-icons/fa";
 
-const RatingForm = ({ nombreBarrio }) => {
+const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -22,6 +22,7 @@ const RatingForm = ({ nombreBarrio }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Aquí puedes manejar el envío del formulario, como llamar a una API
+    console.log(rating, comment, idNeighborhood);
     setTimeout(() => {
       window.location.reload(true);
     }, 1000);

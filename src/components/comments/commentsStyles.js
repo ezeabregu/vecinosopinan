@@ -47,9 +47,16 @@ export const ContainerCommentSeccion = styled.div`
   form {
     margin: 10px;
   }
+
   h2 {
     font-size: 20px;
     margin-bottom: 15px;
+  }
+
+  @media (max-width: 800px) {
+    select {
+      width: 100%;
+    }
   }
 `;
 
