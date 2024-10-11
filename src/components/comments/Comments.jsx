@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import {
   ContainerCommentsStyled,
@@ -13,29 +13,32 @@ import {
 } from "./commentsStyles";
 import { Barrios } from "../../data/barrios";
 import RatingForm from "../../components/ratingForm/RatingForm";
+import axios from "axios";
+import { BASE_URL } from "../../utils/constants";
+import { useSelector } from "react-redux";
 
 // Datos de ejemplo
 const userComments = [
-  {
-    id: 1,
-    date: "2024-03-15",
-    stars: 4,
-    comment: "Excelente producto",
-    neighborhood: 1,
-    photo:
-      "https://w7.pngwing.com/pngs/945/530/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png",
-    username: "Nair Abregu",
-  },
-  {
-    id: 2,
-    date: "2024-03-10",
-    stars: 5,
-    comment: "Muy recomendable",
-    neighborhood: 169,
-    photo:
-      "https://w7.pngwing.com/pngs/945/530/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png",
-    username: "Nair Abregu",
-  },
+  // {
+  //   id: 1,
+  //   date: "2024-03-15",
+  //   stars: 4,
+  //   comment: "Excelente producto",
+  //   neighborhood: 1,
+  //   photo:
+  //     "https://w7.pngwing.com/pngs/945/530/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png",
+  //   username: "Nair Abregu",
+  // },
+  // {
+  //   id: 2,
+  //   date: "2024-03-10",
+  //   stars: 5,
+  //   comment: "Muy recomendable",
+  //   neighborhood: 169,
+  //   photo:
+  //     "https://w7.pngwing.com/pngs/945/530/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png",
+  //   username: "Nair Abregu",
+  // },
 ];
 
 const allComments = [
@@ -102,6 +105,8 @@ const CommentsListUser = ({ comments }) => (
 );
 
 const Comments = () => {
+  const currentUser = useSelector((state) => state.user.currentUser);
+
   const [activeTab, setActiveTab] = useState("user-comments");
 
   const [idNeighborhood, setIdNeighborhood] = useState();
@@ -124,7 +129,28 @@ const Comments = () => {
     a.nombre < b.nombre ? 1 : a.nombre > b.nombre ? -1 : 0
   );
 
-  //console.log("Id:", idNeighborhood, "Nombre barrio:", nombreBarrio);
+  const [comentarios, setComentarios] = useState([]);
+  const [cargando, setCargando] = useState(true);
+  const [error, setError] = useState(null);
+  const email = currentUser.email;
+
+  useEffect(() => {
+    const fetchComentarios = async () => {
+      try {
+        const response = await axios.get(
+          `${BASE_URL}/auth/userComments`,
+          email
+        ); // Cambia esta URL por la tuya
+        setComentarios(response.data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setCargando(false);
+      }
+    };
+
+    fetchComentarios();
+  }, [email]);
 
   return (
     <ContainerCommentsStyled>
@@ -150,7 +176,12 @@ const Comments = () => {
         {activeTab === "user-comments" && (
           <ContainerCommentSeccion>
             <h2>Mis Comentarios</h2>
-            <CommentsListUser comments={userComments} />
+            {error ? <p>Error: {error}</p> : null}
+            {cargando ? (
+              <p>Cargando...</p>
+            ) : (
+              <CommentsListUser comments={comentarios} />
+            )}
           </ContainerCommentSeccion>
         )}
         {activeTab === "all-comments" && (
