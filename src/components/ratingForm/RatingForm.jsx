@@ -29,20 +29,20 @@ const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
     e.preventDefault();
     const email = currentUser.email;
     // Aquí puedes manejar el envío del formulario, como llamar a una API
-    //console.log(rating, comment, idNeighborhood);
-    const user = await commentUser(email, idNeighborhood, rating, comment);
-    if (user) {
-      dispatch(
-        setCurrentUser({
-          ...user.usuario,
-          comment: [idNeighborhood, rating, comment],
-        })
-      );
-    }
-    setTimeout(() => {
-      window.location.reload(true);
-    }, 1000);
-    setSubmitted(true);
+    console.log(email, idNeighborhood, rating, comment);
+    // const user = await commentUser(email, idNeighborhood, rating, comment);
+    // if (user) {
+    //   dispatch(
+    //     setCurrentUser({
+    //       ...user.usuario,
+    //       comment: [idNeighborhood, rating, comment],
+    //     })
+    //   );
+    // }
+    // setTimeout(() => {
+    //   window.location.reload(true);
+    // }, 1000);
+    // setSubmitted(true);
   };
 
   return (
