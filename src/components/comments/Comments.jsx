@@ -16,6 +16,7 @@ import RatingForm from "../../components/ratingForm/RatingForm";
 import axios from "axios";
 import { BASE_URL } from "../../utils/constants";
 import { useSelector } from "react-redux";
+import { PiUserCircleLight } from "react-icons/pi";
 
 // Datos de ejemplo
 const userComments = [
@@ -65,20 +66,34 @@ const allComments = [
   },
 ];
 
-const CommentCard = ({ comment }) => (
+const formatFechaYHora = (fecha) => {
+  return new Date(fecha).toLocaleString("es-ES", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+};
+
+const CommentCard = ({ comment, currentUser }) => (
   <ContainerCommentsCard>
     <CommentHeader>
-      <img src={comment.photo} alt={comment.username} />
+      {/* <img src={comment.photo} alt={"User"} /> */}
+      <PiUserCircleLight size={60} />
       <UserInfo>
-        <h4>{comment.username}</h4>
-        <p>{comment.date}</p>
+        <h4>{currentUser.name}</h4>
+        {Barrios.map((barrio) =>
+          comment.idNeighborhood === barrio.id ? <p>{barrio.nombre}</p> : null
+        )}
+        <p>{formatFechaYHora(comment.date)}</p>
       </UserInfo>
     </CommentHeader>
     <StarRating>
       {[...Array(5)].map((_, i) => (
         <FaStar
           key={i}
-          className={i < comment.stars ? "star-filled" : "star-empty"}
+          className={i < comment.rating ? "star-filled" : "star-empty"}
         />
       ))}
     </StarRating>
@@ -86,20 +101,28 @@ const CommentCard = ({ comment }) => (
   </ContainerCommentsCard>
 );
 
-const CommentsList = ({ comments, idNeighborhood }) => (
+const CommentsList = ({ comments, idNeighborhood, currentUser }) => (
   <ContainerCommentsList>
     {comments.map((comment) =>
       idNeighborhood === comment.neighborhood ? (
-        <CommentCard key={comment.id} comment={comment} />
+        <CommentCard
+          key={comment.id}
+          comment={comment}
+          currentUser={currentUser}
+        />
       ) : null
     )}
   </ContainerCommentsList>
 );
 
-const CommentsListUser = ({ comments }) => (
+const CommentsListUser = ({ comments, currentUser }) => (
   <ContainerCommentsList>
     {comments.map((comment) => (
-      <CommentCard key={comment.id} comment={comment} />
+      <CommentCard
+        key={comment.id}
+        comment={comment}
+        currentUser={currentUser}
+      />
     ))}
   </ContainerCommentsList>
 );
@@ -130,6 +153,8 @@ const Comments = () => {
   );
 
   const [comentarios, setComentarios] = useState([]);
+  //console.log(comentarios);
+
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState(null);
   const email = currentUser.email;
@@ -179,7 +204,10 @@ const Comments = () => {
             {cargando ? (
               <p>Cargando...</p>
             ) : (
-              <CommentsListUser comments={comentarios} />
+              <CommentsListUser
+                comments={comentarios.comments}
+                currentUser={currentUser}
+              />
             )}
           </ContainerCommentSeccion>
         )}
