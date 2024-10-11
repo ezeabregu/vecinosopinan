@@ -29,7 +29,12 @@ const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
     e.preventDefault();
     const email = currentUser.email;
     // Aquí puedes manejar el envío del formulario, como llamar a una API
-    console.log(email, idNeighborhood, rating, comment);
+    console.log(
+      typeof email,
+      typeof idNeighborhood,
+      typeof rating,
+      typeof comment
+    );
     // const user = await commentUser(email, idNeighborhood, rating, comment);
     // if (user) {
     //   dispatch(
