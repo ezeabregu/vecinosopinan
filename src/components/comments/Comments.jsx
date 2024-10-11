@@ -135,12 +135,11 @@ const Comments = () => {
   const email = currentUser.email;
 
   useEffect(() => {
-    const fetchComentarios = async () => {
+    const fetchComentarios = async (email) => {
       try {
-        const response = await axios.get(
-          `${BASE_URL}/auth/userComments`,
-          email
-        ); // Cambia esta URL por la tuya
+        const response = await axios.get(`${BASE_URL}/auth/userComments`, {
+          params: { email },
+        });
         setComentarios(response.data);
       } catch (err) {
         setError(err.message);
@@ -149,7 +148,7 @@ const Comments = () => {
       }
     };
 
-    fetchComentarios();
+    fetchComentarios(email);
   }, [email]);
 
   return (
