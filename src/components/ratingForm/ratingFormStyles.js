@@ -35,6 +35,12 @@ export const ContainerRatingFormStyled = styled.div`
   }
 `;
 
+export const TituloFinal = styled.p`
+  margin: 5rem;
+  color: var(--amarilloOscuro);
+  font-size: 2rem;
+`;
+
 export const ContainerStarStyled = styled.div`
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -63,5 +69,28 @@ export const ContainerCommentStyled = styled.div`
     border: 1px solid var(--amarilloOscuro);
     border-radius: 4px;
     resize: vertical;
+  }
+`;
+
+export const ContainerIconClose = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--amarilloOscuro);
+
+  .iconClose {
+    cursor: pointer;
+  }
+`;
+
+export const ContainerTitle = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  h2 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
   }
 `;

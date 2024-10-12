@@ -18,32 +18,7 @@ import { BASE_URL } from "../../utils/constants";
 import { useSelector } from "react-redux";
 import { PiUserCircleLight } from "react-icons/pi";
 
-// Datos de ejemplo
-const userComments = [
-  // {
-  //   id: 1,
-  //   date: "2024-03-15",
-  //   stars: 4,
-  //   comment: "Excelente producto",
-  //   neighborhood: 1,
-  //   photo:
-  //     "https://w7.pngwing.com/pngs/945/530/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png",
-  //   username: "Nair Abregu",
-  // },
-  // {
-  //   id: 2,
-  //   date: "2024-03-10",
-  //   stars: 5,
-  //   comment: "Muy recomendable",
-  //   neighborhood: 169,
-  //   photo:
-  //     "https://w7.pngwing.com/pngs/945/530/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png",
-  //   username: "Nair Abregu",
-  // },
-];
-
 const allComments = [
-  ...userComments,
   {
     id: 3,
     date: "2024-03-20",
@@ -82,7 +57,7 @@ const CommentCard = ({ comment, currentUser }) => (
       {/* <img src={comment.photo} alt={"User"} /> */}
       <PiUserCircleLight size={60} />
       <UserInfo>
-        <h4>{currentUser.name}</h4>
+        <h4>{currentUser?.name}</h4>
         {Barrios.map((barrio) =>
           comment.idNeighborhood === barrio.id ? <p>{barrio.nombre}</p> : null
         )}
@@ -101,17 +76,11 @@ const CommentCard = ({ comment, currentUser }) => (
   </ContainerCommentsCard>
 );
 
-const CommentsList = ({ comments, idNeighborhood, currentUser }) => (
+const CommentsList = ({ comments }) => (
   <ContainerCommentsList>
-    {comments.map((comment) =>
-      idNeighborhood === comment.neighborhood ? (
-        <CommentCard
-          key={comment.id}
-          comment={comment}
-          currentUser={currentUser}
-        />
-      ) : null
-    )}
+    {comments?.map((comment) => (
+      <CommentCard key={comment.id} comment={comment} />
+    ))}
   </ContainerCommentsList>
 );
 
@@ -152,6 +121,7 @@ const Comments = () => {
     a.nombre < b.nombre ? 1 : a.nombre > b.nombre ? -1 : 0
   );
 
+  //Desde aca realizamos la busqueda de comentarios para el usuario logueado
   const [comentarios, setComentarios] = useState([]);
   //console.log(comentarios);
 
@@ -175,6 +145,27 @@ const Comments = () => {
 
     fetchComentarios(email);
   }, [email]);
+
+  //Desde aca realizamos la busqueda de comentarios para el barrio buscado
+  const [comentariosBarrio, setComentariosBarrio] = useState([]);
+  //console.log(comentariosBarrio);
+
+  useEffect(() => {
+    const fetchComentariosBarrios = async (idNeighborhood) => {
+      try {
+        const response = await axios.get(`${BASE_URL}/auth/commentFind`, {
+          params: { idNeighborhood },
+        });
+        setComentariosBarrio(response.data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setCargando(false);
+      }
+    };
+
+    fetchComentariosBarrios(idNeighborhood);
+  }, [idNeighborhood]);
 
   return (
     <ContainerCommentsStyled>
@@ -235,7 +226,7 @@ const Comments = () => {
               </div>
             ) : null}
             <CommentsList
-              comments={allComments}
+              comments={comentariosBarrio.comments}
               idNeighborhood={idNeighborhood}
               nombreBarrio={nombreBarrio}
             />

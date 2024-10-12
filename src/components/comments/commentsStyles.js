@@ -66,6 +66,8 @@ export const ContainerCommentsCard = styled.div`
   margin-bottom: 15px;
   border-radius: 5px;
   background-color: var(--blanco);
+  min-height: 100px;
+  overflow: hidden;
 `;
 
 export const CommentHeader = styled.div`
@@ -110,7 +112,8 @@ export const StarRating = styled.div`
 
 export const ContainerCommentsList = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  //grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
 
   @media (max-width: 800px) {
