@@ -12,6 +12,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { setCurrentUser } from "../../redux/user/userSlice";
 import { commentUser } from "../../axios/axiosUser";
 import { RiCloseCircleFill } from "react-icons/ri";
+import Picker from "@emoji-mart/react";
+import data from "@emoji-mart/data";
 
 const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
   const currentUser = useSelector((state) => state.user.currentUser);
@@ -58,6 +60,13 @@ const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
     setIsVisible(!isVisible);
   };
 
+  const [showPicker, setShowPicker] = useState(false);
+
+  const handleEmojiSelect = (emoji) => {
+    setComment((prevText) => prevText + emoji.native);
+    setShowPicker(false); // Cerrar el picker después de seleccionar
+  };
+
   return (
     <>
       {submitted ? (
@@ -93,6 +102,21 @@ const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
                   value={comment}
                   onChange={handleCommentChange}
                 />
+                {/* <Picker data={data} onEmojiSelect={console.log} /> */}
+                <button
+                  type="button"
+                  onClick={() => setShowPicker(!showPicker)}
+                >
+                  {showPicker ? "Cerrar" : "🙂"}
+                </button>
+                {showPicker && (
+                  <Picker
+                    // onSelect={handleEmojiSelect}
+                    data={data}
+                    onEmojiSelect={handleEmojiSelect}
+                    style={{ position: "absolute", zIndex: 1 }}
+                  />
+                )}
               </ContainerCommentStyled>
               <button type="submit" disabled={isSubmitting}>
                 {isSubmitting ? "Enviando..." : "Enviar"}
