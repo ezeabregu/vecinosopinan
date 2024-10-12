@@ -17,6 +17,7 @@ import axios from "axios";
 import { BASE_URL } from "../../utils/constants";
 import { useSelector } from "react-redux";
 import { PiUserCircleLight } from "react-icons/pi";
+import Spinner from "../spinner/Spinner";
 
 const formatFechaYHora = (fecha) => {
   return new Date(fecha).toLocaleString("es-ES", {
@@ -184,7 +185,8 @@ const Comments = () => {
             <h2>Mis Comentarios</h2>
             {error ? <p>Error: {error}</p> : null}
             {cargando ? (
-              <p>Cargando...</p>
+              // <p>Cargando...</p>
+              <Spinner />
             ) : (
               <CommentsListUser
                 comments={comentarios.comments}

@@ -13,6 +13,7 @@ export const ContainerHome = styled.div`
 `;
 
 export const ContainerHeroe = styled.div`
+  width: 80%;
   border: none;
   border-radius: 10px;
   margin: 1rem;
@@ -37,7 +38,7 @@ export const ContainerHeroText = styled.div`
   padding: 0 5rem;
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     //letter-spacing: 2px;
     background: linear-gradient(var(--amarilloOscuro), var(--amarillo));
@@ -59,13 +60,13 @@ export const ContainerHeroText = styled.div`
     gap: 20px;
     margin: 1rem auto;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.6rem;
     }
     p {
       width: 100%;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       text-align: center;
     }
   }
@@ -91,25 +92,23 @@ export const LinkButton = styled(Link)`
 
 export const ContainerHeroImage = styled.div`
   width: 50%;
+  border-radius: 0 10px 10px 0;
   overflow: hidden;
   img {
     width: 100%;
     height: 100%;
-    border-radius: 0 10px 10px 0;
-    transition: 1s all ease-in-out;
+    transition: scale 400ms;
 
     &:hover {
-      border-radius: 0 10px 10px 0;
-      -webkit-transform: scale(1.1);
-      transform: scale(1.3);
+      scale: 120%;
     }
   }
 
   @media (max-width: 800px) {
     width: 100%;
+    border-radius: 10px 10px 0px 0px;
     img {
       overflow: hidden;
-      border-radius: 10px 10px 0px 0px;
     }
   }
 `;
