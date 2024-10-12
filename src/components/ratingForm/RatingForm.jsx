@@ -35,14 +35,8 @@ const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
     e.preventDefault();
     setIsSubmitting(true);
     const email = currentUser.email;
-    const username = currentUser.name;
-    const user = await commentUser(
-      email,
-      idNeighborhood,
-      rating,
-      comment,
-      username
-    );
+
+    const user = await commentUser(email, idNeighborhood, rating, comment);
     if (user) {
       dispatch(
         setCurrentUser({

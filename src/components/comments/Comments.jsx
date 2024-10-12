@@ -18,29 +18,6 @@ import { BASE_URL } from "../../utils/constants";
 import { useSelector } from "react-redux";
 import { PiUserCircleLight } from "react-icons/pi";
 
-const allComments = [
-  {
-    id: 3,
-    date: "2024-03-20",
-    stars: 3,
-    comment: "Bueno, pero mejorable",
-    neighborhood: 169,
-    photo:
-      "https://w7.pngwing.com/pngs/415/459/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png",
-    username: "Tomito",
-  },
-  {
-    id: 4,
-    date: "2024-03-05",
-    stars: 5,
-    neighborhood: 169,
-    comment: "Increíble servicio",
-    photo:
-      "https://cdn.icon-icons.com/icons2/2643/PNG/512/female_woman_person_people_avatar_user_white_tone_icon_159359.png",
-    username: "Taykan",
-  },
-];
-
 const formatFechaYHora = (fecha) => {
   return new Date(fecha).toLocaleString("es-ES", {
     year: "numeric",
@@ -86,7 +63,7 @@ const CommentsList = ({ comments }) => (
 
 const CommentsListUser = ({ comments, currentUser }) => (
   <ContainerCommentsList>
-    {comments.map((comment) => (
+    {comments?.map((comment) => (
       <CommentCard
         key={comment.id}
         comment={comment}
@@ -158,7 +135,7 @@ const Comments = () => {
         });
         setComentariosBarrio(response.data);
       } catch (err) {
-        setError(err.message);
+        console.log(err.message);
       } finally {
         setCargando(false);
       }
