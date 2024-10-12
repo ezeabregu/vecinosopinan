@@ -55,9 +55,22 @@ const CommentCard = ({ comment, currentUser }) => (
 
 const CommentsList = ({ comments }) => (
   <ContainerCommentsList>
-    {comments?.map((comment) => (
-      <CommentCard key={comment.id} comment={comment} />
-    ))}
+    {comments && comments.length > 0 ? (
+      comments.map((comment) => (
+        <CommentCard key={comment.id} comment={comment} />
+      ))
+    ) : (
+      <p
+        style={{
+          textAlign: "center",
+          gridColumn: "1 / -1",
+          color: "gray",
+          margin: "1rem",
+        }}
+      >
+        No hay comentarios disponibles.
+      </p>
+    )}
   </ContainerCommentsList>
 );
 
@@ -203,15 +216,11 @@ const Comments = () => {
                 />
               </div>
             ) : null}
-            {comentariosBarrio.length ? (
-              <CommentsList
-                comments={comentariosBarrio.comments}
-                idNeighborhood={idNeighborhood}
-                nombreBarrio={nombreBarrio}
-              />
-            ) : (
-              <p>No hay comentarios aún</p>
-            )}
+            <CommentsList
+              comments={comentariosBarrio.comments}
+              idNeighborhood={idNeighborhood}
+              nombreBarrio={nombreBarrio}
+            />
           </ContainerCommentSeccion>
         )}
       </ContainerTabsContent>

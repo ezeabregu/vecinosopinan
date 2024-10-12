@@ -50,6 +50,7 @@ const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
     }, 1000);
     setSubmitted(true);
     setIsSubmitting(false);
+    console.log(currentUser);
   };
 
   const [isVisible, setIsVisible] = useState(true);
