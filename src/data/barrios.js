@@ -145,7 +145,7 @@ export const Barrios = [
   },
   {
     id: 25,
-    nombre: "AMPLIACION RESIDENCIAL AMERICA",
+    nombre: "AMPLIACIÓN RESIDENCIAL AMERICA",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.375925968461026%2C-64.16116305000001&z=16",
   },
@@ -223,7 +223,7 @@ export const Barrios = [
   },
   {
     id: 38,
-    nombre: "AMPLIACION PANAMERICANO",
+    nombre: "AMPLIACIÓN PANAMERICANO",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.365319524999986%2C-64.180152025&z=16",
   },
@@ -475,7 +475,7 @@ export const Barrios = [
   },
   {
     id: 78,
-    nombre: "AMPLIACION POETA LUGONES",
+    nombre: "AMPLIACIÓN POETA LUGONES",
     ubicacion:
       "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.358675152521908%2C-64.2221955&z=16 ",
   },
@@ -805,7 +805,7 @@ export const Barrios = [
   },
   {
     id: 134,
-    nombre: "AMPLIACION LOS PLATANOS",
+    nombre: "AMPLIACIÓN LOS PLATANOS",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.419425182875376%2C-64.2344124&z=17",
   },
@@ -877,7 +877,7 @@ export const Barrios = [
   },
   {
     id: 147,
-    nombre: "AMPLIACION LOS ALAMOS",
+    nombre: "AMPLIACIÓN LOS ALAMOS",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.364057057142844%2C-64.15427347142858&z=17",
   },
@@ -895,7 +895,7 @@ export const Barrios = [
   },
   {
     id: 150,
-    nombre: "AMPLIACION LOS GIGANTES",
+    nombre: "AMPLIACIÓN LOS GIGANTES",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.362570569061184%2C-64.16175514999999&z=17",
   },
@@ -1081,7 +1081,7 @@ export const Barrios = [
   },
   {
     id: 181,
-    nombre: "AMPLIACION PUEYRREDON",
+    nombre: "AMPLIACIÓN PUEYRREDON",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.39467005714284%2C-64.14549207142856&z=17",
   },
@@ -1213,7 +1213,7 @@ export const Barrios = [
   },
   {
     id: 203,
-    nombre: "AMPLIACION EMPALME",
+    nombre: "AMPLIACIÓN EMPALME",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.434531309118853%2C-64.13075174999999&z=15",
   },
@@ -1297,7 +1297,7 @@ export const Barrios = [
   },
   {
     id: 217,
-    nombre: "AMPLIACION YAPEYÚ",
+    nombre: "AMPLIACIÓN YAPEYÚ",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.415764070562755%2C-64.14558299999999&z=17",
   },
@@ -1327,7 +1327,7 @@ export const Barrios = [
   },
   {
     id: 222,
-    nombre: "AMPLIACION ALTAMIRA",
+    nombre: "AMPLIACIÓN ALTAMIRA",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.418932255780696%2C-64.12993755&z=17",
   },
@@ -1561,7 +1561,7 @@ export const Barrios = [
   },
   {
     id: 261,
-    nombre: "AMPLIACION PARQUE SAN CARLOS",
+    nombre: "AMPLIACIÓN PARQUE SAN CARLOS",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.45057288333334%2C-64.15638381666666&z=17",
   },
@@ -1951,7 +1951,7 @@ export const Barrios = [
   },
   {
     id: 326,
-    nombre: "AMPLIACION MATIENZO",
+    nombre: "AMPLIACIÓN MATIENZO",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.44248770749752%2C-64.22964240000002&z=17",
   },
