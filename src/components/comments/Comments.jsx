@@ -202,11 +202,15 @@ const Comments = () => {
                 />
               </div>
             ) : null}
-            <CommentsList
-              comments={comentariosBarrio.comments}
-              idNeighborhood={idNeighborhood}
-              nombreBarrio={nombreBarrio}
-            />
+            {comentariosBarrio.length ? (
+              <CommentsList
+                comments={comentariosBarrio.comments}
+                idNeighborhood={idNeighborhood}
+                nombreBarrio={nombreBarrio}
+              />
+            ) : (
+              <p>No hay comentarios aún</p>
+            )}
           </ContainerCommentSeccion>
         )}
       </ContainerTabsContent>
