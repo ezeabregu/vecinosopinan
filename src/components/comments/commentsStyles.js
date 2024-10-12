@@ -4,6 +4,11 @@ export const ContainerCommentsStyled = styled.div`
   max-width: 800px;
   margin: 1rem auto;
   padding: 20px;
+
+  @media (max-width: 800px) {
+    margin: 1rem 0;
+    padding: 0;
+  }
 `;
 
 export const ContainerTabs = styled.div`
@@ -35,12 +40,19 @@ export const ContainerTabs = styled.div`
   .tab.active {
     background-color: var(--amarilloOscuro);
   }
+
+  @media (max-width: 800px) {
+  }
 `;
 
 export const ContainerTabsContent = styled.div`
   background-color: var(--NoBlanco);
   border: 1px solid #ddd;
   padding: 20px;
+
+  @media (max-width: 800px) {
+    padding: 10px 0;
+  }
 `;
 
 export const ContainerCommentSeccion = styled.div`
@@ -56,6 +68,10 @@ export const ContainerCommentSeccion = styled.div`
   @media (max-width: 800px) {
     select {
       width: 100%;
+      padding: 10px;
+    }
+    option {
+      padding: 10px;
     }
   }
 `;
