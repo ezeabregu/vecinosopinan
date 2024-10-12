@@ -136,6 +136,7 @@ const Comments = () => {
         setComentariosBarrio(response.data);
       } catch (err) {
         console.log(err.message);
+        setComentariosBarrio([]);
       } finally {
         setCargando(false);
       }
