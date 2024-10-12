@@ -14,6 +14,7 @@ import { commentUser } from "../../axios/axiosUser";
 import { RiCloseCircleFill } from "react-icons/ri";
 import Picker from "@emoji-mart/react";
 import data from "@emoji-mart/data";
+import SpinnerNew from "../spinnerNew/SpinnerNew";
 
 const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
   const currentUser = useSelector((state) => state.user.currentUser);
@@ -119,7 +120,7 @@ const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
                 )}
               </ContainerCommentStyled>
               <button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Enviando..." : "Enviar"}
+                {isSubmitting ? <SpinnerNew /> : "Enviar"}
               </button>
             </form>
           </ContainerRatingFormStyled>
