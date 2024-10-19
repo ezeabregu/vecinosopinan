@@ -90,6 +90,7 @@ export const CommentHeader = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  justify-content: space-evenly;
 
   img {
     width: 50px;
@@ -100,13 +101,26 @@ export const CommentHeader = styled.div`
 `;
 
 export const UserInfo = styled.div`
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
   h4 {
     margin: 0;
-    font-size: 16px;
+    font-size: 10px;
   }
   p {
-    font-size: 12px;
+    font-size: 8px;
     color: #777;
+  }
+
+  @media (max-width: 800px) {
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
   }
 `;
 

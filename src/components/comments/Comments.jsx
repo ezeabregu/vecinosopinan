@@ -18,6 +18,7 @@ import { BASE_URL } from "../../utils/constants";
 import { useSelector } from "react-redux";
 import { PiUserCircleLight } from "react-icons/pi";
 import Spinner from "../spinner/Spinner";
+import { FaTrashCan } from "react-icons/fa6";
 
 const formatFechaYHora = (fecha) => {
   return new Date(fecha).toLocaleString("es-ES", {
@@ -27,6 +28,17 @@ const formatFechaYHora = (fecha) => {
     hour: "2-digit",
     minute: "2-digit",
   });
+};
+
+const deleteComment = async (id, email) => {
+  try {
+    const response = await axios.delete(`${BASE_URL}/auth/commentDelete`, {
+      params: { id, email },
+    });
+    console.log(response.data.msg);
+  } catch (error) {
+    console.error("Error al eliminar el comentario:", error.response.data.msg);
+  }
 };
 
 const CommentCard = ({ comment, currentUser }) => (
@@ -41,6 +53,11 @@ const CommentCard = ({ comment, currentUser }) => (
         )}
         <p>{formatFechaYHora(comment.date)}</p>
       </UserInfo>
+      {currentUser ? (
+        <FaTrashCan
+          onClick={() => deleteComment(comment.id, currentUser.email)}
+        />
+      ) : null}
     </CommentHeader>
     <StarRating>
       {[...Array(5)].map((_, i) => (
@@ -147,6 +164,8 @@ const Comments = () => {
         const response = await axios.get(`${BASE_URL}/auth/commentFind`, {
           params: { idNeighborhood },
         });
+        //console.log(response.data);
+
         setComentariosBarrio(response.data);
       } catch (err) {
         console.log(err.message);
