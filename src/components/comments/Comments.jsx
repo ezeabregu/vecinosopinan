@@ -47,7 +47,11 @@ const CommentCard = ({ comment, currentUser }) => (
       {/* <img src={comment.photo} alt={"User"} /> */}
       <PiUserCircleLight size={60} />
       <UserInfo>
-        {currentUser ? <h4>{currentUser?.name}</h4> : <h4>{comment.person}</h4>}
+        {currentUser ? (
+          <h4>{currentUser?.name}</h4>
+        ) : (
+          <h4>{comment.person?.toUpperCase()}</h4>
+        )}
 
         {Barrios.map((barrio) =>
           comment.idNeighborhood === barrio.id ? <p>{barrio.nombre}</p> : null
