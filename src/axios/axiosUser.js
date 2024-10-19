@@ -40,13 +40,20 @@ export const verifyUser = async (email, code) => {
   }
 };
 
-export const commentUser = async (email, idNeighborhood, rating, comment) => {
+export const commentUser = async (
+  email,
+  idNeighborhood,
+  rating,
+  comment,
+  person
+) => {
   try {
     const response = await axios.patch(`${BASE_URL}/auth/comment`, {
       email,
       idNeighborhood,
       rating,
       comment,
+      person,
     });
     return response.data;
   } catch (error) {
