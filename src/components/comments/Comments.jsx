@@ -10,6 +10,8 @@ import {
   UserInfo,
   StarRating,
   ContainerCommentsList,
+  ContainerData,
+  ContainerComment,
 } from "./commentsStyles";
 import { Barrios } from "../../data/barrios";
 import RatingForm from "../../components/ratingForm/RatingForm";
@@ -36,8 +38,11 @@ const deleteComment = async (id, email) => {
       params: { id, email },
     });
     console.log(response.data.msg);
+    alert("El comentario se eliminó correctamente!");
   } catch (error) {
     console.error("Error al eliminar el comentario:", error.response.data.msg);
+  } finally {
+    window.location.reload();
   }
 };
 
@@ -45,21 +50,24 @@ const CommentCard = ({ comment, currentUser }) => (
   <ContainerCommentsCard>
     <CommentHeader>
       {/* <img src={comment.photo} alt={"User"} /> */}
-      <PiUserCircleLight size={60} />
-      <UserInfo>
-        {currentUser ? (
-          <h4>{currentUser?.name}</h4>
-        ) : (
-          <h4>{comment.person?.toUpperCase()}</h4>
-        )}
+      <ContainerData>
+        <PiUserCircleLight size={60} />
+        <UserInfo>
+          {currentUser ? (
+            <h4>{currentUser?.name}</h4>
+          ) : (
+            <h4>{comment.person?.toUpperCase()}</h4>
+          )}
 
-        {Barrios.map((barrio) =>
-          comment.idNeighborhood === barrio.id ? <p>{barrio.nombre}</p> : null
-        )}
-        <p>{formatFechaYHora(comment.date)}</p>
-      </UserInfo>
+          {Barrios.map((barrio) =>
+            comment.idNeighborhood === barrio.id ? <p>{barrio.nombre}</p> : null
+          )}
+          <p>{formatFechaYHora(comment.date)}</p>
+        </UserInfo>
+      </ContainerData>
       {currentUser ? (
         <FaTrashCan
+          style={{ color: "red" }}
           onClick={() => deleteComment(comment.id, currentUser.email)}
         />
       ) : null}
@@ -72,42 +80,67 @@ const CommentCard = ({ comment, currentUser }) => (
         />
       ))}
     </StarRating>
-    <p>{comment.comment}</p>
+    <ContainerComment>
+      <p>{comment.comment}</p>
+    </ContainerComment>
   </ContainerCommentsCard>
 );
 
-const CommentsList = ({ comments }) => (
-  <ContainerCommentsList>
-    {comments && comments.length > 0 ? (
-      comments.map((comment) => (
-        <CommentCard key={comment.id} comment={comment} />
-      ))
-    ) : (
-      <p
-        style={{
-          textAlign: "center",
-          gridColumn: "1 / -1",
-          color: "gray",
-          margin: "1rem",
-        }}
-      >
-        No hay comentarios disponibles.
-      </p>
-    )}
-  </ContainerCommentsList>
-);
+const CommentsList = ({ comments }) => {
+  const sortedComments = comments
+    ? comments.sort((a, b) => new Date(b.date) - new Date(a.date))
+    : [];
+  return (
+    <ContainerCommentsList>
+      {sortedComments && sortedComments.length > 0 ? (
+        sortedComments.map((comment) => (
+          <CommentCard key={comment.id} comment={comment} />
+        ))
+      ) : (
+        <p
+          style={{
+            textAlign: "center",
+            gridColumn: "1 / -1",
+            color: "grey",
+            margin: "1rem",
+          }}
+        >
+          No hay comentarios disponibles.
+        </p>
+      )}
+    </ContainerCommentsList>
+  );
+};
 
-const CommentsListUser = ({ comments, currentUser }) => (
-  <ContainerCommentsList>
-    {comments?.map((comment) => (
-      <CommentCard
-        key={comment.id}
-        comment={comment}
-        currentUser={currentUser}
-      />
-    ))}
-  </ContainerCommentsList>
-);
+const CommentsListUser = ({ comments, currentUser }) => {
+  const sortedComments = comments
+    ? comments.sort((a, b) => new Date(b.date) - new Date(a.date))
+    : [];
+  return (
+    <ContainerCommentsList>
+      {sortedComments && sortedComments.length > 0 ? (
+        sortedComments?.map((comment) => (
+          <CommentCard
+            key={comment.id}
+            comment={comment}
+            currentUser={currentUser}
+          />
+        ))
+      ) : (
+        <p
+          style={{
+            textAlign: "center",
+            gridColumn: "1 / -1",
+            color: "grey",
+            margin: "3rem",
+          }}
+        >
+          Aún no comentaste un barrio
+        </p>
+      )}
+    </ContainerCommentsList>
+  );
+};
 
 const Comments = () => {
   const currentUser = useSelector((state) => state.user.currentUser);

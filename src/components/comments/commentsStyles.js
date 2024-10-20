@@ -86,11 +86,19 @@ export const ContainerCommentsCard = styled.div`
   overflow: hidden;
 `;
 
+export const ContainerComment = styled.div`
+  padding: 0 2rem;
+  p {
+    text-align: start;
+  }
+`;
+
 export const CommentHeader = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 2rem;
 
   img {
     width: 50px;
@@ -140,12 +148,19 @@ export const StarRating = styled.div`
   }
 `;
 
+export const ContainerData = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+`;
+
 export const ContainerCommentsList = styled.div`
   display: grid;
   //grid-template-columns: 1fr 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  //grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: 1fr;
   gap: 10px;
-
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
     gap: 5px;
