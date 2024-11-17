@@ -38,7 +38,7 @@ const Home = () => {
               historias del barrio.
             </p>
             <LinkButton to="/about">
-              Conoce más <IoIosArrowRoundForward size={30} />
+              Sobre nosotros <IoIosArrowRoundForward size={30} />
             </LinkButton>
           </motion.div>
         </ContainerHeroText>

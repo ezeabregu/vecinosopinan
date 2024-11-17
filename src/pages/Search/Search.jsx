@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   ContainerSearch,
   MapResponsive,
@@ -9,12 +9,17 @@ import { Barrios } from "../../data/barrios";
 // import RatingForm from "../../components/ratingForm/RatingForm";
 // import { motion } from "framer-motion";
 //import { useSelector } from "react-redux";
+import Modal from "../../components/modal/Modal";
 
 const Search = () => {
   //const currentUser = useSelector((state) => state.user.currentUser);
   const [userLocation, setUserLocation] = useState(null);
   //const [barrioSelectedRating, setBarrioSelectedRating] = useState(false);
   //const [nombreBarrio, setNombreBarrio] = useState();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
 
   let linkMapWithLocation =
     "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ehbc=2E312F";
@@ -61,8 +66,15 @@ const Search = () => {
     a.nombre < b.nombre ? 1 : a.nombre > b.nombre ? -1 : 0
   );
 
+  useEffect(() => {
+    setIsModalOpen(true);
+  }, []);
+
   return (
     <ContainerSearch>
+      <div>
+        <Modal show={isModalOpen} handleClose={toggleModal} />
+      </div>
       <ContainerBarriosList>
         <h2>Buscá tu barrio</h2>
         <form action="#">
