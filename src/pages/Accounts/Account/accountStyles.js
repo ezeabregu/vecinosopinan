@@ -19,15 +19,19 @@ export const ContainerAccountTitle = styled.div`
   justify-content: space-around;
 
   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    background-color: var(--amarilloOscuro);
+    background-color: var(--rojo);
     color: var(--blanco);
     font-size: 1rem;
     padding: 5px 20px;
     &:hover {
-      background-color: var(--amarillo);
+      background-color: var(--rojo);
     }
   }
 

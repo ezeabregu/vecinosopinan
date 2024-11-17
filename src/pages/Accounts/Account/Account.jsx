@@ -14,6 +14,7 @@ import { verifyUser } from "../../../axios/axiosUser";
 import { validationVerify } from "../../../formik/validationSchema";
 import { initialValuesVerify } from "../../../formik/initiailValues";
 import Comments from "../../../components/comments/Comments";
+import { ImExit } from "react-icons/im";
 
 const Account = () => {
   const currentUser = useSelector((state) => state.user.currentUser);
@@ -64,7 +65,7 @@ const Account = () => {
             navigate("/");
           }}
         >
-          Salir
+          Salir <ImExit />
         </button>
       </ContainerAccountTitle>
       <Comments />

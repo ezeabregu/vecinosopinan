@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     --amarillo: #feba02;
     --amarilloOscuro: #ff9900;
     --NoBlanco: #f6f6f5;
+    --rojo: #ff4c4c;
 }
 html{
         scroll-behavior: smooth;
