@@ -11,7 +11,13 @@ export const ContainerNavbar = styled.div`
   color: var(--blanco);
 `;
 
-export const ContainerIconHome = styled.div``;
+export const ContainerIconHome = styled.div`
+  @media (max-width: 800px) {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+`;
 
 export const NavbarSection = styled.div`
   max-width: 1300px;

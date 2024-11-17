@@ -7,7 +7,7 @@ export const LinkContainerStyled = styled.div`
   width: 100%;
   background-color: var(--amarilloOscuro);
   color: var(--blanco);
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
