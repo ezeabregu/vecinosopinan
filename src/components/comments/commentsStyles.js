@@ -78,7 +78,7 @@ export const ContainerCommentSeccion = styled.div`
 
 export const ContainerCommentsCard = styled.div`
   border: 1px solid #e0e0e0;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 15px;
   border-radius: 5px;
   background-color: var(--blanco);
@@ -90,6 +90,13 @@ export const ContainerComment = styled.div`
   padding: 0 2rem;
   p {
     text-align: start;
+  }
+
+  @media (max-width: 800px) {
+    padding: 0 0.2rem;
+    p {
+      text-align: justify;
+    }
   }
 `;
 
@@ -105,6 +112,10 @@ export const CommentHeader = styled.div`
     height: 50px;
     border-radius: 25px;
     margin-right: 15px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 0 0.2rem;
   }
 `;
 
@@ -124,10 +135,10 @@ export const UserInfo = styled.div`
 
   @media (max-width: 800px) {
     h4 {
-      font-size: 16px;
+      font-size: 13px;
     }
     p {
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 `;
@@ -145,6 +156,10 @@ export const StarRating = styled.div`
   }
   .star-empty {
     color: #e0e0e0;
+  }
+
+  @media (max-width: 800px) {
+    text-align: start;
   }
 `;
 
