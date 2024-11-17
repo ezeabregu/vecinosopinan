@@ -167,7 +167,7 @@ export const ContainerData = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
 `;
 
 export const ContainerCommentsList = styled.div`
