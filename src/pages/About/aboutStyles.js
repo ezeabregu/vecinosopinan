@@ -14,7 +14,7 @@ export const ContainerAbout = styled.div`
 
   @media (max-width: 800px) {
     margin: auto;
-    padding: 3rem;
+    padding: 1rem;
   }
 `;
 
@@ -26,18 +26,18 @@ export const ContainerParrafo = styled.div`
   max-width: 700px;
 
   p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
     text-align: justify;
   }
 
   label {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
   }
 
   ul {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: left;
   }

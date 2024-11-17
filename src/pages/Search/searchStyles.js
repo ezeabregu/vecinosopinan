@@ -18,8 +18,8 @@ export const ContainerSearch = styled.div`
   }
 
   @media (max-width: 800px) {
-    padding-top: 3rem;
-    gap: 4rem;
+    padding-top: 1rem;
+    gap: 2rem;
     height: auto;
   }
 `;

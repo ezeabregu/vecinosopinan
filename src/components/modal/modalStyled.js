@@ -60,6 +60,13 @@ export const ModalContent = styled.div`
     text-align: start;
     color: #333;
   }
+
+  @media (max-width: 800px) {
+    p {
+      text-align: start;
+      color: #333;
+    }
+  }
 `;
 
 export const LinkButton = styled(Link)`

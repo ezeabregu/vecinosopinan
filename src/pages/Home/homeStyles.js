@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const ContainerHome = styled.div`
   width: 100vw;
   height: auto;
-  padding: 2rem;
+  padding: 0.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,12 +62,12 @@ export const ContainerHeroText = styled.div`
     width: 100%;
     padding: 10px;
     h1 {
-      font-size: 2.6rem;
+      font-size: 2rem;
     }
     p {
       width: 100%;
-      font-size: 1.2rem;
-      text-align: center;
+      font-size: 1rem;
+      text-align: justify;
     }
   }
 `;
