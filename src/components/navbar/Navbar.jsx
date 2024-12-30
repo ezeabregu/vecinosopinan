@@ -37,9 +37,10 @@ const Navbar = () => {
               navigate("/");
             }}
           >
-            <p>
+            {/* <p>
               <strong>VECINOS OPINAN</strong>
-            </p>
+            </p> */}
+            <img src="VO.png" alt="Logo" />
           </ContainerIconHome>
 
           <ul>

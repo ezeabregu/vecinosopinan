@@ -55,6 +55,11 @@ export const ContainerHeroText = styled.div`
     //line-height: 40px;
   }
 
+  img {
+    width: 170px;
+    border-radius: 80px;
+  }
+
   @media (max-width: 800px) {
     align-items: center;
     gap: 20px;

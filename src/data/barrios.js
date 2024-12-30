@@ -2135,6 +2135,241 @@ export const Barrios = [
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.300091483333315%2C-64.17748101666666&z=16",
   },
+  {
+    id: 359,
+    nombre: "PARQUE DON BOSCO",
+    ubicacion: "",
+  },
+  {
+    id: 360,
+    nombre: "NUEVO URCA",
+    ubicacion: "",
+  },
+  {
+    id: 361,
+    nombre: "ALTOS DEL CHATEAU",
+    ubicacion: "",
+  },
+  {
+    id: 362,
+    nombre: "LOMAS DE LA CAROLINA",
+    ubicacion: "",
+  },
+  {
+    id: 363,
+    nombre: "LA CAROLINA",
+    ubicacion: "",
+  },
+  {
+    id: 364,
+    nombre: "LAS DELICIAS",
+    ubicacion: "",
+  },
+  {
+    id: 365,
+    nombre: "DEAN FUNES",
+    ubicacion: "",
+  },
+  {
+    id: 366,
+    nombre: "AMPLIACION DE MAYO",
+    ubicacion: "",
+  },
+  {
+    id: 367,
+    nombre: "SAN FELIPE",
+    ubicacion: "",
+  },
+  {
+    id: 368,
+    nombre: "23 DE ABRIL",
+    ubicacion: "",
+  },
+  {
+    id: 369,
+    nombre: "JOSE IGNACIO RUCCI",
+    ubicacion: "",
+  },
+  {
+    id: 370,
+    nombre: "RAMON J. CARCANO",
+    ubicacion: "",
+  },
+  {
+    id: 371,
+    nombre: "FERREYRA",
+    ubicacion: "",
+  },
+  {
+    id: 372,
+    nombre: "AMPLIACION NUEVO FERREYRA",
+    ubicacion: "",
+  },
+  {
+    id: 373,
+    nombre: "LOS 40 GUASOS",
+    ubicacion: "",
+  },
+  {
+    id: 374,
+    nombre: "NICOLAS AVELLANEDA",
+    ubicacion: "",
+  },
+  {
+    id: 375,
+    nombre: "EVITA",
+    ubicacion: "",
+  },
+  {
+    id: 376,
+    nombre: "VILLA CAPULLO",
+    ubicacion: "",
+  },
+  {
+    id: 377,
+    nombre: "VILLA BUSTOS",
+    ubicacion: "",
+  },
+  {
+    id: 378,
+    nombre: "BOEDO",
+    ubicacion: "",
+  },
+  {
+    id: 379,
+    nombre: "PORTAL DE CORDOBA",
+    ubicacion: "",
+  },
+  {
+    id: 380,
+    nombre: "SAN LORENZO SUD",
+    ubicacion: "",
+  },
+  {
+    id: 381,
+    nombre: "SAN JAVIER",
+    ubicacion: "",
+  },
+  {
+    id: 382,
+    nombre: "LOS SAUCES",
+    ubicacion: "",
+  },
+  {
+    id: 383,
+    nombre: "ITUZAINGO",
+    ubicacion: "",
+  },
+  {
+    id: 384,
+    nombre: "ALMIRANTE BROWN",
+    ubicacion: "",
+  },
+  {
+    id: 385,
+    nombre: "ITUZAINGO ANEXO",
+    ubicacion: "",
+  },
+  {
+    id: 386,
+    nombre: "QUINTAS DEL SUR",
+    ubicacion: "",
+  },
+  {
+    id: 387,
+    nombre: "LOS EUCALIPTUS",
+    ubicacion: "",
+  },
+  {
+    id: 388,
+    nombre: "LOS FRESNOS",
+    ubicacion: "",
+  },
+  {
+    id: 389,
+    nombre: "PARQUE ITUZAINGO 2",
+    ubicacion: "",
+  },
+  {
+    id: 390,
+    nombre: "BEATRIZ CAMINOS",
+    ubicacion: "",
+  },
+  {
+    id: 400,
+    nombre: "CIUDAD DE LOS SUEÑOS",
+    ubicacion: "",
+  },
+  {
+    id: 401,
+    nombre: "LAS CAÑUELAS",
+    ubicacion: "",
+  },
+  {
+    id: 402,
+    nombre: "FINCAS DEL SUR",
+    ubicacion: "",
+  },
+  {
+    id: 403,
+    nombre: "CORONEL OLMEDO AMPLIACION",
+    ubicacion: "",
+  },
+  {
+    id: 404,
+    nombre: "MIRIZZI",
+    ubicacion: "",
+  },
+  {
+    id: 405,
+    nombre: "RESIDENCIAL SANTA ROSA",
+    ubicacion: "",
+  },
+  {
+    id: 406,
+    nombre: "ALEJANDRO CARBO",
+    ubicacion: "",
+  },
+  {
+    id: 407,
+    nombre: "TEJAS DE LA CANDELARIA",
+    ubicacion: "",
+  },
+  {
+    id: 408,
+    nombre: "NUESTRO HOGAR III",
+    ubicacion: "",
+  },
+  {
+    id: 409,
+    nombre: "1° DE JULIO",
+    ubicacion: "",
+  },
+  {
+    id: 410,
+    nombre: "QUINTAS DE ITALIA",
+    ubicacion: "",
+  },
+  {
+    id: 411,
+    nombre: "EL QUEBRACHO",
+    ubicacion: "",
+  },
+  {
+    id: 412,
+    nombre: "SAN LUCAS",
+    ubicacion: "",
+  },
+  {
+    id: 413,
+    nombre: "LA BONITA",
+    ubicacion: "",
+  },
+  {
+    id: 414,
+    nombre: "BETANIA",
+    ubicacion: "",
+  },
 ];
 
 export const TotalBarrios = Barrios.length;

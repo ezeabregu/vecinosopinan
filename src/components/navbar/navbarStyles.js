@@ -12,6 +12,10 @@ export const ContainerNavbar = styled.div`
 `;
 
 export const ContainerIconHome = styled.div`
+  img {
+    width: 80px;
+    cursor: pointer;
+  }
   @media (max-width: 800px) {
     p {
       font-size: 0.7rem;

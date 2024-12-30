@@ -65,6 +65,17 @@ export const ContainerCommentSeccion = styled.div`
     margin-bottom: 15px;
   }
 
+  select {
+    border: 1px solid var(--amarilloOscuro);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--amarilloOscuro);
+    color: var(--NoBlanco);
+    font-size: 1rem;
+    font-weight: 500;
+    scrollbar-width: thin;
+  }
+
   @media (max-width: 800px) {
     select {
       width: 100%;
