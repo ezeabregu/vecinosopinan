@@ -10,8 +10,8 @@ export const bounce = keyframes`
 `;
 
 export const SpinnerContainer = styled.div`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   position: relative;
   margin: auto;
 `;
@@ -20,7 +20,7 @@ export const Bounce = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--amarilloOscuro);
+  background-color: ${(props) => props.color || "#ff9900"};
   position: absolute;
   top: 0;
   left: 0;

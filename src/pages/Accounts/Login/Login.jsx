@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import { loginUser } from "../../../axios/axiosUser";
 import { setCurrentUser } from "../../../redux/user/userSlice";
 import { useDispatch } from "react-redux";
+import Spinner from "../../../components/spinner/Spinner";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -33,28 +34,41 @@ const Login = () => {
                 })
               );
               navigate("/accounts/account");
+              actions.setSubmitting(false);
             }
             actions.resetForm();
           }}
         >
-          <ContainerForm>
-            <h3>VECINOS OPINAN</h3>
-            <div>
-              {/* <label htmlFor="">Correo electrónico</label> */}
-              <Field
-                type="email"
-                name="email"
-                placeholder="Correo electrónico"
-              />
-              <ErrorMessage name="email" component={ErrorStyled} />
-            </div>
-            <div>
-              {/* <label htmlFor="">Contraseña</label> */}
-              <Field type="password" name="password" placeholder="Contraseña" />
-              <ErrorMessage name="password" component={ErrorStyled} />
-            </div>
-            <button type="submit">Entrar</button>
-          </ContainerForm>
+          {({ isSubmitting }) => (
+            <ContainerForm>
+              <h3>VECINOS OPINAN</h3>
+              <div>
+                {/* <label htmlFor="">Correo electrónico</label> */}
+                <Field
+                  type="email"
+                  name="email"
+                  placeholder="Correo electrónico"
+                />
+                <ErrorMessage name="email" component={ErrorStyled} />
+              </div>
+              <div>
+                {/* <label htmlFor="">Contraseña</label> */}
+                <Field
+                  type="password"
+                  name="password"
+                  placeholder="Contraseña"
+                />
+                <ErrorMessage name="password" component={ErrorStyled} />
+              </div>
+              {isSubmitting ? (
+                <button type="submit">
+                  <Spinner color="white" />
+                </button>
+              ) : (
+                <button type="submit">Entrar</button>
+              )}
+            </ContainerForm>
+          )}
         </Formik>
         <ContainerSingup>
           <p>

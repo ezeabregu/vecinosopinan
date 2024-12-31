@@ -2138,237 +2138,284 @@ export const Barrios = [
   {
     id: 359,
     nombre: "PARQUE DON BOSCO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.3882397757644%2C-64.27416001598682&z=15",
   },
   {
     id: 360,
     nombre: "NUEVO URCA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.38347710306931%2C-64.26733647625294&z=15",
   },
   {
     id: 361,
     nombre: "ALTOS DEL CHATEAU",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.375196804900586%2C-64.26536237041798&z=15",
   },
   {
     id: 362,
     nombre: "LOMAS DE LA CAROLINA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.35556167420472%2C-64.3011728098724&z=15",
   },
   {
     id: 363,
     nombre: "LA CAROLINA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.352922998675897%2C-64.28495080975033&z=15",
   },
   {
     id: 364,
     nombre: "LAS DELICIAS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.362304619701373%2C-64.29675252941585&z=15",
   },
   {
     id: 365,
     nombre: "DEAN FUNES",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.445383580000016%2C-64.11914887&z=16",
   },
   {
     id: 366,
     nombre: "AMPLIACION DE MAYO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.443670234800173%2C-64.11203424999998&z=17",
   },
   {
     id: 367,
     nombre: "SAN FELIPE",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.45610582499998%2C-64.135621075&z=16",
   },
   {
     id: 368,
     nombre: "23 DE ABRIL",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.45786052499999%2C-64.12776345&z=17",
   },
   {
     id: 369,
     nombre: "JOSE IGNACIO RUCCI",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.464027799999993%2C-64.12861649999998&z=15",
   },
   {
     id: 370,
     nombre: "RAMON J. CARCANO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.463983107639095%2C-64.14535425&z=16",
   },
   {
     id: 371,
     nombre: "FERREYRA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46638361666667%2C-64.11271451666666&z=15",
   },
   {
     id: 372,
     nombre: "AMPLIACION NUEVO FERREYRA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.469541680468012%2C-64.10406775000001&z=16",
   },
   {
     id: 373,
     nombre: "LOS 40 GUASOS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.466684662622484%2C-64.1040193&z=17",
   },
   {
     id: 374,
     nombre: "NICOLAS AVELLANEDA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46165542857142%2C-64.10371445714286&z=17",
   },
   {
     id: 375,
     nombre: "EVITA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.448241485714266%2C-64.10943158571429&z=16",
   },
   {
     id: 376,
     nombre: "VILLA CAPULLO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.451172950751587%2C-64.11029780000001&z=16",
   },
   {
     id: 377,
     nombre: "VILLA BUSTOS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.437224750000002%2C-64.11009116666666&z=16",
   },
   {
     id: 378,
     nombre: "BOEDO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.431815445454554%2C-64.10994905454545&z=16",
   },
   {
     id: 379,
     nombre: "PORTAL DE CORDOBA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.44474992999999%2C-64.11014672&z=16",
   },
   {
     id: 380,
     nombre: "SAN LORENZO SUD",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.454356433333327%2C-64.11090443333336&z=16",
   },
   {
     id: 381,
     nombre: "SAN JAVIER",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.455921914356118%2C-64.10168730000001&z=16",
   },
   {
     id: 382,
     nombre: "LOS SAUCES",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.461314474999984%2C-64.0988392&z=17",
   },
   {
     id: 383,
     nombre: "ITUZAINGO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.4641428875%2C-64.09408820625&z=16",
   },
   {
     id: 384,
     nombre: "ALMIRANTE BROWN",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 385,
     nombre: "ITUZAINGO ANEXO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 386,
     nombre: "QUINTAS DEL SUR",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 387,
     nombre: "LOS EUCALIPTUS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 388,
     nombre: "LOS FRESNOS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 389,
     nombre: "PARQUE ITUZAINGO 2",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 390,
     nombre: "BEATRIZ CAMINOS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 400,
-    nombre: "CIUDAD DE LOS SUEÑOS",
-    ubicacion: "",
+    nombre: "CIUDAD DE MIS SUEÑOS",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 401,
     nombre: "LAS CAÑUELAS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 402,
     nombre: "FINCAS DEL SUR",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 403,
     nombre: "CORONEL OLMEDO AMPLIACION",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 404,
     nombre: "MIRIZZI",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 405,
     nombre: "RESIDENCIAL SANTA ROSA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 406,
     nombre: "ALEJANDRO CARBO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 407,
     nombre: "TEJAS DE LA CANDELARIA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 408,
     nombre: "NUESTRO HOGAR III",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 409,
     nombre: "1° DE JULIO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 410,
     nombre: "QUINTAS DE ITALIA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 411,
     nombre: "EL QUEBRACHO",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 412,
     nombre: "SAN LUCAS",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 413,
     nombre: "LA BONITA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
   {
     id: 414,
     nombre: "BETANIA",
-    ubicacion: "",
+    ubicacion:
+      "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.46088283381922%2C-64.0907851&z=17",
   },
 ];
 

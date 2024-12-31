@@ -1,11 +1,11 @@
 import React from "react";
 import { SpinnerContainer, Bounce } from "./spinnerStyles";
 
-const Spinner = () => {
+const Spinner = ({ color }) => {
   return (
     <SpinnerContainer>
-      <Bounce />
-      <Bounce />
+      <Bounce color={color} />
+      <Bounce color={color} />
     </SpinnerContainer>
   );
 };

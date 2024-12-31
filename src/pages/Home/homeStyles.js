@@ -55,9 +55,16 @@ export const ContainerHeroText = styled.div`
     //line-height: 40px;
   }
 
+  .contenedorLogo {
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   img {
     width: 170px;
-    border-radius: 80px;
+    border-radius: 100px;
   }
 
   @media (max-width: 800px) {
@@ -73,6 +80,9 @@ export const ContainerHeroText = styled.div`
       width: 100%;
       font-size: 1rem;
       text-align: justify;
+    }
+    .contenedorLogo {
+      padding-left: 20px;
     }
   }
 `;

@@ -21,7 +21,9 @@ const Home = () => {
             transition={{ type: "spring", stiffness: 260, damping: 10 }}
           >
             {/* <h1>VECINOS OPINAN</h1> */}
-            <img src="VO.png" alt="Logo" />
+            <div class="contenedorLogo">
+              <img src="VO.png" alt="Logo" />
+            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}

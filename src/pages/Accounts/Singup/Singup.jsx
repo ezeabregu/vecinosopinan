@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import { createUser } from "../../../axios/axiosUser";
 import { useDispatch } from "react-redux";
 import { setCurrentUser } from "../../../redux/user/userSlice";
+import Spinner from "../../../components/spinner/Spinner";
 
 const Singup = () => {
   const navigate = useNavigate();
@@ -32,38 +33,51 @@ const Singup = () => {
             if (user) {
               dispatch(setCurrentUser({ ...user.usuario, token: user.token }));
               navigate("/accounts/account");
+              actions.setSubmitting(false);
             }
           }}
         >
-          <ContainerForm>
-            <h3>VECINOS OPINAN</h3>
-            <div>
-              {/* <label htmlFor="">Contraseña</label> */}
-              <Field type="text" name="name" placeholder="Nombre completo" />
-              <ErrorMessage name="name" component={ErrorStyled} />
-            </div>
-            <div>
-              {/* <label htmlFor="">Correo electrónico</label> */}
-              <Field
-                type="email"
-                name="email"
-                placeholder="Correo electrónico"
-              />
-              <ErrorMessage name="email" component={ErrorStyled} />
-            </div>
-            <div>
-              {/* <label htmlFor="">Contraseña</label> */}
-              <Field type="password" name="password" placeholder="Contraseña" />
-              <ErrorMessage name="password" component={ErrorStyled} />
-            </div>
-            <div>
-              <span>
-                Al registrarte, aceptas nuestras Condiciones, nuestra Política
-                de privacidad y nuestra Política de cookies.
-              </span>
-            </div>
-            <button type="submit">Registrarte</button>
-          </ContainerForm>
+          {({ isSubmitting }) => (
+            <ContainerForm>
+              <h3>VECINOS OPINAN</h3>
+              <div>
+                {/* <label htmlFor="">Contraseña</label> */}
+                <Field type="text" name="name" placeholder="Nombre completo" />
+                <ErrorMessage name="name" component={ErrorStyled} />
+              </div>
+              <div>
+                {/* <label htmlFor="">Correo electrónico</label> */}
+                <Field
+                  type="email"
+                  name="email"
+                  placeholder="Correo electrónico"
+                />
+                <ErrorMessage name="email" component={ErrorStyled} />
+              </div>
+              <div>
+                {/* <label htmlFor="">Contraseña</label> */}
+                <Field
+                  type="password"
+                  name="password"
+                  placeholder="Contraseña"
+                />
+                <ErrorMessage name="password" component={ErrorStyled} />
+              </div>
+              <div>
+                <span>
+                  Al registrarte, aceptas nuestras Condiciones, nuestra Política
+                  de privacidad y nuestra Política de cookies.
+                </span>
+              </div>
+              {isSubmitting ? (
+                <button type="submit">
+                  <Spinner color="white" />
+                </button>
+              ) : (
+                <button type="submit">Registrarte</button>
+              )}
+            </ContainerForm>
+          )}
         </Formik>
         <ContainerSingup>
           <p>
