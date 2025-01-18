@@ -9,6 +9,7 @@ import {
 import { motion } from "framer-motion";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import heroImg from "../../assets/img/hero.jpg";
+import votexto from "../../assets/img/votexto.png";
 
 const Home = () => {
   return (
@@ -22,7 +23,8 @@ const Home = () => {
           >
             {/* <h1>VECINOS OPINAN</h1> */}
             <div class="contenedorLogo">
-              <img src="VO.png" alt="Logo" />
+              <img src="vologo.png" alt="Logo" />
+              <img src={votexto} alt="Logo Texto" />
             </div>
           </motion.div>
           <motion.div

@@ -13,6 +13,8 @@ export const ContainerAccount = styled.div`
 `;
 
 export const ContainerAccountTitle = styled.div`
+  max-width: 1300px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;

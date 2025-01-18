@@ -102,14 +102,18 @@ const Search = () => {
       ) : null} */}
       <MapResponsive>
         {Iframe ? (
-          <Iframe
-            src={userLocation}
-            frameBorder="0"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            aria-hidden="false"
-            tabIndex="0"
-          ></Iframe>
+          <div>
+            <Iframe
+              src={userLocation}
+              frameBorder="0"
+              allowFullScreen=""
+              aria-hidden="false"
+              tabIndex="0"
+              style={{
+                border: "none",
+              }}
+            ></Iframe>
+          </div>
         ) : (
           <p>Cargando mapa...</p>
         )}

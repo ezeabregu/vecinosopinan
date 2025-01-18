@@ -12,6 +12,9 @@ import {
   ContainerCommentsList,
   ContainerData,
   ContainerComment,
+  ContainerLikes,
+  ButtonLike,
+  ButtonDislike,
 } from "./commentsStyles";
 import { Barrios } from "../../data/barrios";
 import RatingForm from "../../components/ratingForm/RatingForm";
@@ -58,11 +61,19 @@ const CommentCard = ({ comment, currentUser }) => (
           ) : (
             <h4>{comment.person?.toUpperCase()}</h4>
           )}
+          <p>{formatFechaYHora(comment.date)}</p>
 
           {Barrios.map((barrio) =>
             comment.idNeighborhood === barrio.id ? <p>{barrio.nombre}</p> : null
           )}
-          <p>{formatFechaYHora(comment.date)}</p>
+          <StarRating>
+            {[...Array(5)].map((_, i) => (
+              <FaStar
+                key={i}
+                className={i < comment.rating ? "star-filled" : "star-empty"}
+              />
+            ))}
+          </StarRating>
         </UserInfo>
       </ContainerData>
       {currentUser ? (
@@ -72,17 +83,13 @@ const CommentCard = ({ comment, currentUser }) => (
         />
       ) : null}
     </CommentHeader>
-    <StarRating>
-      {[...Array(5)].map((_, i) => (
-        <FaStar
-          key={i}
-          className={i < comment.rating ? "star-filled" : "star-empty"}
-        />
-      ))}
-    </StarRating>
     <ContainerComment>
       <p>{comment.comment}</p>
     </ContainerComment>
+    <ContainerLikes>
+      <ButtonLike></ButtonLike>
+      <ButtonDislike></ButtonDislike>
+    </ContainerLikes>
   </ContainerCommentsCard>
 );
 

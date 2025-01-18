@@ -36,8 +36,8 @@ export const MapResponsive = styled.div`
 
   Iframe {
     left: 0;
-    top: 0;
-    height: 100%;
+    top: -78px;
+    height: calc(100% + 70px);
     width: 100%;
     position: absolute;
   }

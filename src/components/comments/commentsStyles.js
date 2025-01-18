@@ -155,7 +155,7 @@ export const UserInfo = styled.div`
 `;
 
 export const StarRating = styled.div`
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 
   p {
     font-size: 14px;
@@ -191,4 +191,30 @@ export const ContainerCommentsList = styled.div`
     grid-template-columns: 1fr;
     gap: 5px;
   }
+`;
+
+export const ContainerLikes = styled.div`
+  width: 95%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 8px;
+`;
+
+export const ButtonLike = styled.button`
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+`;
+export const ButtonDislike = styled.button`
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
 `;

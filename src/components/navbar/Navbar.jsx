@@ -40,7 +40,7 @@ const Navbar = () => {
             {/* <p>
               <strong>VECINOS OPINAN</strong>
             </p> */}
-            <img src="VO.png" alt="Logo" />
+            <img src="vologo.png" alt="Logo" />
           </ContainerIconHome>
 
           <ul>

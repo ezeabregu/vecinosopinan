@@ -56,15 +56,15 @@ export const ContainerHeroText = styled.div`
   }
 
   .contenedorLogo {
-    padding-left: 100px;
+    /* padding-left: 100px; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   img {
-    width: 170px;
-    border-radius: 100px;
+    width: 40%;
+    /* border-radius: 100px; */
   }
 
   @media (max-width: 800px) {
