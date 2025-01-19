@@ -49,49 +49,66 @@ const deleteComment = async (id, email) => {
   }
 };
 
-const CommentCard = ({ comment, currentUser }) => (
-  <ContainerCommentsCard>
-    <CommentHeader>
-      {/* <img src={comment.photo} alt={"User"} /> */}
-      <ContainerData>
-        <PiUserCircleLight size={60} />
-        <UserInfo>
-          {currentUser ? (
-            <h4>{currentUser?.name}</h4>
-          ) : (
-            <h4>{comment.person?.toUpperCase()}</h4>
-          )}
-          <p>{formatFechaYHora(comment.date)}</p>
+const CommentCard = ({ comment, currentUser }) => {
+  // Estado para el contador de "likes"
+  const [likeCount, setLikeCount] = useState(comment.likes || 0);
+  const [dislikeCount, setDislikeCount] = useState(comment.dislikes || 0);
+  // Incrementar el contador de "likes"
+  const handleLikeClick = () => {
+    setLikeCount(likeCount + 1);
+  };
+  const handleDislikeClick = () => {
+    setDislikeCount(dislikeCount + 1);
+  };
 
-          {Barrios.map((barrio) =>
-            comment.idNeighborhood === barrio.id ? <p>{barrio.nombre}</p> : null
-          )}
-          <StarRating>
-            {[...Array(5)].map((_, i) => (
-              <FaStar
-                key={i}
-                className={i < comment.rating ? "star-filled" : "star-empty"}
-              />
-            ))}
-          </StarRating>
-        </UserInfo>
-      </ContainerData>
-      {currentUser ? (
-        <FaTrashCan
-          style={{ color: "red" }}
-          onClick={() => deleteComment(comment.id, currentUser.email)}
-        />
-      ) : null}
-    </CommentHeader>
-    <ContainerComment>
-      <p>{comment.comment}</p>
-    </ContainerComment>
-    <ContainerLikes>
-      <ButtonLike></ButtonLike>
-      <ButtonDislike></ButtonDislike>
-    </ContainerLikes>
-  </ContainerCommentsCard>
-);
+  return (
+    <ContainerCommentsCard>
+      <CommentHeader>
+        {/* <img src={comment.photo} alt={"User"} /> */}
+        <ContainerData>
+          <PiUserCircleLight size={60} />
+          <UserInfo>
+            {currentUser ? (
+              <h4>{currentUser?.name}</h4>
+            ) : (
+              <h4>{comment.person?.toUpperCase()}</h4>
+            )}
+            <p>{formatFechaYHora(comment.date)}</p>
+
+            {Barrios.map((barrio) =>
+              comment.idNeighborhood === barrio.id ? (
+                <p>{barrio.nombre}</p>
+              ) : null
+            )}
+            <StarRating>
+              {[...Array(5)].map((_, i) => (
+                <FaStar
+                  key={i}
+                  className={i < comment.rating ? "star-filled" : "star-empty"}
+                />
+              ))}
+            </StarRating>
+          </UserInfo>
+        </ContainerData>
+        {currentUser ? (
+          <FaTrashCan
+            style={{ color: "red" }}
+            onClick={() => deleteComment(comment.id, currentUser.email)}
+          />
+        ) : null}
+      </CommentHeader>
+      <ContainerComment>
+        <p>{comment.comment}</p>
+      </ContainerComment>
+      <ContainerLikes>
+        <ButtonLike onClick={handleLikeClick}>{likeCount}</ButtonLike>
+        <ButtonDislike onClick={handleDislikeClick}>
+          {dislikeCount}
+        </ButtonDislike>
+      </ContainerLikes>
+    </ContainerCommentsCard>
+  );
+};
 
 const CommentsList = ({ comments }) => {
   const sortedComments = comments

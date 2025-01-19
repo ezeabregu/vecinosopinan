@@ -203,18 +203,22 @@ export const ContainerLikes = styled.div`
 `;
 
 export const ButtonLike = styled.button`
-  background-color: green;
-  width: 20px;
+  background-color: #34bf49;
+  width: 30px;
   height: 20px;
   border-radius: 50px;
   border: none;
   cursor: pointer;
+  color: var(--NoBlanco);
+  font-weight: 600;
 `;
 export const ButtonDislike = styled.button`
-  background-color: red;
-  width: 20px;
+  background-color: #ff4c4c;
+  width: 30px;
   height: 20px;
   border-radius: 50px;
   border: none;
   cursor: pointer;
+  color: var(--NoBlanco);
+  font-weight: 600;
 `;
