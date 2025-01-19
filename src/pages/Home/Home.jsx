@@ -5,11 +5,15 @@ import {
   ContainerHeroText,
   ContainerHeroImage,
   LinkButton,
+  ContainerRRSS,
+  ContainerIg,
 } from "./homeStyles";
 import { motion } from "framer-motion";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import heroImg from "../../assets/img/hero.jpg";
 import votexto from "../../assets/img/votexto.png";
+import celular from "../../assets/img/celular.jpg";
+import logoig from "../../assets/img/iglogo.png";
 
 const Home = () => {
   return (
@@ -50,6 +54,17 @@ const Home = () => {
         <ContainerHeroImage>
           <img src={heroImg} alt="inicio" />
         </ContainerHeroImage>
+      </ContainerHeroe>
+      <ContainerHeroe>
+        <ContainerRRSS>
+          <ContainerIg>
+            <h2>¡Síguenos en Instagram!</h2>
+            <a href="https://www.instagram.com/vecinosopinan/" target="blank">
+              <img src={logoig} alt="LogoIG" />
+            </a>
+          </ContainerIg>
+          <img src={celular} alt="Celular" />
+        </ContainerRRSS>
       </ContainerHeroe>
     </ContainerHome>
   );

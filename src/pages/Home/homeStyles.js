@@ -8,8 +8,15 @@ export const ContainerHome = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 5px;
   background-color: var(--NoBlanco);
   color: var(--blanco);
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 export const ContainerHeroe = styled.div`
@@ -82,7 +89,7 @@ export const ContainerHeroText = styled.div`
       text-align: justify;
     }
     .contenedorLogo {
-      padding-left: 20px;
+      /* padding-left: 20px; */
     }
   }
 `;
@@ -124,6 +131,48 @@ export const ContainerHeroImage = styled.div`
     border-radius: 10px 10px 0px 0px;
     img {
       overflow: hidden;
+    }
+  }
+`;
+
+export const ContainerRRSS = styled.div`
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 150px;
+    transform: rotate(15deg);
+  }
+
+  @media (max-width: 800px) {
+    overflow: hidden;
+    img {
+      width: 30%;
+    }
+  }
+`;
+
+export const ContainerIg = styled.div`
+  width: 70%;
+  h2 {
+    color: var(--amarilloOscuro);
+    font-size: 2rem;
+  }
+  img {
+    width: 60px;
+    transform: rotate(0deg);
+  }
+
+  @media (max-width: 800px) {
+    width: 50%;
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      margin-bottom: 20px;
     }
   }
 `;
