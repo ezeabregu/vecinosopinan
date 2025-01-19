@@ -170,9 +170,12 @@ export const ContainerIg = styled.div`
   @media (max-width: 800px) {
     width: 50%;
     h2 {
-      font-size: 2.2rem;
+      font-size: 1.2rem;
       font-weight: 900;
       margin-bottom: 20px;
+    }
+    img {
+      width: 40px;
     }
   }
 `;
