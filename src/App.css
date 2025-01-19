@@ -4,6 +4,29 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  scrollbar-width: thin; /* Hace la barra de desplazamiento más fina */
+  scrollbar-color: var(--amarilloOscuro) transparent; /* El primer color es para el pulgar, el segundo para la pista */
+}
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo para el fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Fondo transparente para la pista */
+}
+
+/* Estilo para el pulgar (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--amarilloOscuro); /* Color amarillo */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para cuando el pulgar está en hover (cuando el cursor pasa sobre él) */
+::-webkit-scrollbar-thumb:hover {
+  background-color: darkorange; /* Color al pasar el mouse (opcional) */
 }
 
 .App {
