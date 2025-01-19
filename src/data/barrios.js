@@ -343,9 +343,9 @@ export const Barrios = [
   },
   {
     id: 58,
-    nombre: "ALTA CORDOBA",
+    nombre: "ALTA CORDOBA NORTE",
     ubicacion:
-      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.390840818333356%2C-64.18334999333332&z=14",
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.38132838732345%2C-64.18384654999998&z=15",
   },
   {
     id: 59,
@@ -2416,6 +2416,120 @@ export const Barrios = [
     nombre: "BETANIA",
     ubicacion:
       "https://www.google.com/maps/d/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&femb=1&ll=-31.460186033333343%2C-64.09400973333332&z=17",
+  },
+  {
+    id: 415,
+    nombre: "VILLA EUCARÍSTICA",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.481896003624158%2C-64.17912860000001&z=14",
+  },
+  {
+    id: 416,
+    nombre: "ALTA CORDOBA SUR",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.39908703684208%2C-64.18529215263155&z=15",
+  },
+  {
+    id: 417,
+    nombre: "INAUDI",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.47766694444444%2C-64.19325369444445&z=17",
+  },
+  {
+    id: 418,
+    nombre: "LAS HUERTILLAS",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.471374478947364%2C-64.19585900526315&z=16",
+  },
+  {
+    id: 419,
+    nombre: "SAN ANTONIO",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.473910416381162%2C-64.1909084&z=17",
+  },
+  {
+    id: 421,
+    nombre: "LOS OLMOS SUD",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.467670244945076%2C-64.2145741&z=16",
+  },
+  {
+    id: 422,
+    nombre: "SANTA ISABEL 2DA SECC",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.476908199999972%2C-64.23141985&z=16",
+  },
+  {
+    id: 423,
+    nombre: "SAN PEDRO NOLASCO",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.465030024999965%2C-64.2358227625&z=17",
+  },
+  {
+    id: 424,
+    nombre: "V.I.C.O.R",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.47708396666665%2C-64.24561008888891&z=16",
+  },
+  {
+    id: 425,
+    nombre: "SANTA ISABEL 3ERA SECC",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.478206364065684%2C-64.2433741&z=16",
+  },
+  {
+    id: 426,
+    nombre: "SAN LUIS DE FRANCIA",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.479894714174446%2C-64.2527756&z=17",
+  },
+  {
+    id: 427,
+    nombre: "KAIROS",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.48299699999998%2C-64.25051849999998&z=18",
+  },
+  {
+    id: 428,
+    nombre: "LA ESPERANZA",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.48328671249999%2C-64.2403861&z=17",
+  },
+  {
+    id: 429,
+    nombre: "EL CABILDO",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.48620301185054%2C-64.23690324999998&z=16",
+  },
+  {
+    id: 430,
+    nombre: "VALLE CERCANO",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.48600140000002%2C-64.22081160000002&z=16",
+  },
+  {
+    id: 431,
+    nombre: "COMERCIAL",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.484808499999982%2C-64.20888183999999&z=16",
+  },
+  {
+    id: 432,
+    nombre: "FELIPE VARELA",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.488839190537544%2C-64.21219725000002&z=17",
+  },
+  {
+    id: 433,
+    nombre: "AMPLIACION CABILDO",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.485705321428565%2C-64.22773241428573&z=16",
+  },
+  {
+    id: 434,
+    nombre: "CABILDO ANEXO",
+    ubicacion:
+      "https://www.google.com/maps/d/u/0/embed?mid=1jOvKnOgVTvHtdZODbsv_Hh59ixpm_dY&ll=-31.492349625000003%2C-64.2286827875&z=16",
   },
 ];
 
