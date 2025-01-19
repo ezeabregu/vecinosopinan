@@ -53,12 +53,30 @@ const CommentCard = ({ comment, currentUser }) => {
   // Estado para el contador de "likes"
   const [likeCount, setLikeCount] = useState(comment.likes || 0);
   const [dislikeCount, setDislikeCount] = useState(comment.dislikes || 0);
+  const [hasVoted, setHasVoted] = useState(false); // Para verificar si ya votó
+  const [userChoice, setUserChoice] = useState(null); // Para almacenar si eligió like o dislike
   // Incrementar el contador de "likes"
   const handleLikeClick = () => {
-    setLikeCount(likeCount + 1);
+    if (!hasVoted) {
+      setLikeCount(likeCount + 1);
+      setUserChoice("like");
+      setHasVoted(true);
+    } else if (userChoice === "dislike") {
+      setDislikeCount(dislikeCount - 1);
+      setLikeCount(likeCount + 1);
+      setUserChoice("like");
+    }
   };
   const handleDislikeClick = () => {
-    setDislikeCount(dislikeCount + 1);
+    if (!hasVoted) {
+      setDislikeCount(dislikeCount + 1);
+      setUserChoice("dislike");
+      setHasVoted(true);
+    } else if (userChoice === "like") {
+      setLikeCount(likeCount - 1);
+      setDislikeCount(dislikeCount + 1);
+      setUserChoice("dislike");
+    }
   };
 
   return (
