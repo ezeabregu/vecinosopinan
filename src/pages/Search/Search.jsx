@@ -10,9 +10,10 @@ import { Barrios } from "../../data/barrios";
 // import { motion } from "framer-motion";
 //import { useSelector } from "react-redux";
 import Modal from "../../components/modal/Modal";
+import { useSelector } from "react-redux";
 
 const Search = () => {
-  //const currentUser = useSelector((state) => state.user.currentUser);
+  const currentUser = useSelector((state) => state.user.currentUser);
   const [userLocation, setUserLocation] = useState(null);
   //const [barrioSelectedRating, setBarrioSelectedRating] = useState(false);
   //const [nombreBarrio, setNombreBarrio] = useState();
@@ -73,7 +74,9 @@ const Search = () => {
   return (
     <ContainerSearch>
       <div>
-        <Modal show={isModalOpen} handleClose={toggleModal} />
+        {currentUser ? null : (
+          <Modal show={isModalOpen} handleClose={toggleModal} />
+        )}
       </div>
       <ContainerBarriosList>
         <h2>Buscá tu barrio</h2>

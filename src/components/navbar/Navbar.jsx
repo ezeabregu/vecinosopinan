@@ -11,6 +11,7 @@ import { IoCloseCircle } from "react-icons/io5";
 import Menu from "./Menu/Menu";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleOcultarMenuBurger } from "../../redux/menuBurger/menuBurgerSlice";
+import vologo from "../../assets/img/vologo.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -40,7 +41,7 @@ const Navbar = () => {
             {/* <p>
               <strong>VECINOS OPINAN</strong>
             </p> */}
-            <img src="vologo.png" alt="Logo" />
+            <img src={vologo} alt="Logo" />
           </ContainerIconHome>
 
           <ul>
