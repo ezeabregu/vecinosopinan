@@ -70,7 +70,7 @@ export const ModalContent = styled.div`
 `;
 
 export const LinkButton = styled(Link)`
-  width: 50px;
+  width: 150px;
   padding: 5px;
   background-color: var(--amarilloOscuro);
   border: none;
