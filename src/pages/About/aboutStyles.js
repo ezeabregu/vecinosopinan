@@ -53,6 +53,11 @@ export const ContainerParrafo = styled.div`
     color: var(--amarilloOscuro);
   }
 
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
   @media (max-width: 800px) {
     strong {
       color: var(--amarilloOscuro);

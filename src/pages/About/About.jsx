@@ -7,6 +7,7 @@ import {
 import { FaSlideshare } from "react-icons/fa";
 import { LiaHandsHelpingSolid } from "react-icons/lia";
 import { FaPeopleGroup } from "react-icons/fa6";
+import devicesvo from "../../assets/img/devicesvo.png";
 
 const About = () => {
   return (
@@ -47,6 +48,7 @@ const About = () => {
             </li>
           </ul>
           <label htmlFor="">¡Gracias por ser parte de nuestra comunidad!</label>
+          <img src={devicesvo} alt="Devices VO" />
         </ContainerParrafo>
       </ContainerAbout>
     </>
