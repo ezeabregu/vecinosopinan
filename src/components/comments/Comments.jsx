@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { FaStar } from "react-icons/fa";
 import {
   ContainerCommentsStyled,
@@ -65,7 +65,7 @@ const CommentCard = ({ comment, currentUser }) => {
     setHasVoted(true); // Marcar que el usuario ha votado
 
     // Guardar en el localStorage que este usuario ya votó en este comentario
-    localStorage.setItem(`hasVoted_${comment.id}_${currentUser.id}`, "true");
+    //localStorage.setItem(`hasVoted_${comment.id}_${currentUser.id}`, "true");
 
     try {
       await axios.patch(`${BASE_URL}/auth/likes?commentId=${comment.id}`, {
@@ -76,16 +76,23 @@ const CommentCard = ({ comment, currentUser }) => {
     }
   };
 
-  // UseEffect para cargar el voto del usuario (si ya existe) desde el backend
-  useEffect(() => {
-    // Verificar si el usuario ya ha votado en el comentario desde el localStorage
-    const hasVotedFromStorage = localStorage.getItem(
-      `hasVoted_${comment.id}_${currentUser.id}`
-    );
-    if (hasVotedFromStorage === "true") {
-      setHasVoted(true);
-    }
-  }, [comment.id, currentUser]);
+  //const currentUserRef = useRef(currentUser);
+
+  // useEffect(() => {
+  //   currentUserRef.current = currentUser;
+  // }, [currentUser]);
+
+  // // UseEffect para cargar el voto del usuario (si ya existe) desde el backend
+  // useEffect(() => {
+  //   if (!currentUserRef.current) return; // Verifica que currentUser esté disponible
+  //   // Verificar si el usuario ya ha votado en el comentario desde el localStorage
+  //   const hasVotedFromStorage = localStorage.getItem(
+  //     `hasVoted_${comment.id}_${currentUser.id}`
+  //   );
+  //   if (hasVotedFromStorage === "true") {
+  //     setHasVoted(true);
+  //   }
+  // }, [comment.id, currentUser]);
 
   return (
     <ContainerCommentsCard>
