@@ -24,6 +24,7 @@ import { useSelector } from "react-redux";
 import { PiUserCircleLight } from "react-icons/pi";
 import Spinner from "../spinner/Spinner";
 import { FaTrashCan } from "react-icons/fa6";
+import { SlLike } from "react-icons/sl";
 
 const formatFechaYHora = (fecha) => {
   return new Date(fecha).toLocaleString("es-ES", {
@@ -50,34 +51,41 @@ const deleteComment = async (id, email) => {
 };
 
 const CommentCard = ({ comment, currentUser }) => {
-  // Estado para el contador de "likes"
-  const [likeCount, setLikeCount] = useState(comment.likes || 0);
-  const [dislikeCount, setDislikeCount] = useState(comment.dislikes || 0);
-  const [hasVoted, setHasVoted] = useState(false); // Para verificar si ya votó
-  const [userChoice, setUserChoice] = useState(null); // Para almacenar si eligió like o dislike
-  // Incrementar el contador de "likes"
-  const handleLikeClick = () => {
-    if (!hasVoted) {
-      setLikeCount(likeCount + 1);
-      setUserChoice("like");
-      setHasVoted(true);
-    } else if (userChoice === "dislike") {
-      setDislikeCount(dislikeCount - 1);
-      setLikeCount(likeCount + 1);
-      setUserChoice("like");
+  const [userVote, setUserVote] = useState(null); // Para almacenar el voto actual del usuario
+  const [hasVoted, setHasVoted] = useState(false); // Para verificar si el usuario ya ha votado
+
+  // Función para manejar el like o dislike
+  const handleVote = async (voteType) => {
+    if (hasVoted) {
+      // Si el voto actual es el mismo, no hacer nada
+      return;
+    }
+
+    setUserVote(voteType);
+    setHasVoted(true); // Marcar que el usuario ha votado
+
+    // Guardar en el localStorage que este usuario ya votó en este comentario
+    localStorage.setItem(`hasVoted_${comment.id}_${currentUser.id}`, "true");
+
+    try {
+      await axios.patch(`${BASE_URL}/auth/likes?commentId=${comment.id}`, {
+        voteType: voteType, // 'like' o 'dislike'
+      });
+    } catch (error) {
+      console.error("Error al votar:", error);
     }
   };
-  const handleDislikeClick = () => {
-    if (!hasVoted) {
-      setDislikeCount(dislikeCount + 1);
-      setUserChoice("dislike");
+
+  // UseEffect para cargar el voto del usuario (si ya existe) desde el backend
+  useEffect(() => {
+    // Verificar si el usuario ya ha votado en el comentario desde el localStorage
+    const hasVotedFromStorage = localStorage.getItem(
+      `hasVoted_${comment.id}_${currentUser.id}`
+    );
+    if (hasVotedFromStorage === "true") {
       setHasVoted(true);
-    } else if (userChoice === "like") {
-      setLikeCount(likeCount - 1);
-      setDislikeCount(dislikeCount + 1);
-      setUserChoice("dislike");
     }
-  };
+  }, [comment.id, currentUser]);
 
   return (
     <ContainerCommentsCard>
@@ -119,9 +127,15 @@ const CommentCard = ({ comment, currentUser }) => {
         <p>{comment.comment}</p>
       </ContainerComment>
       <ContainerLikes>
-        <ButtonLike onClick={handleLikeClick}>{likeCount}</ButtonLike>
-        <ButtonDislike onClick={handleDislikeClick}>
-          {dislikeCount}
+        <ButtonLike onClick={() => handleVote("like")} disabled={userVote}>
+          <SlLike />
+          {comment.like}
+        </ButtonLike>
+        <ButtonDislike
+          onClick={() => handleVote("dislike")}
+          disabled={userVote}
+        >
+          Reportar
         </ButtonDislike>
       </ContainerLikes>
     </ContainerCommentsCard>
