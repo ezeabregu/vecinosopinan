@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import {
   ContainerCommentsStyled,
@@ -53,6 +53,7 @@ const deleteComment = async (id, email) => {
 const CommentCard = ({ comment, currentUser }) => {
   const [userVote, setUserVote] = useState(null); // Para almacenar el voto actual del usuario
   const [hasVoted, setHasVoted] = useState(false); // Para verificar si el usuario ya ha votado
+  const [likes, setLikes] = useState(comment.like); // Estado para manejar los likes actualizados
 
   // Función para manejar el like o dislike
   const handleVote = async (voteType) => {
@@ -63,9 +64,10 @@ const CommentCard = ({ comment, currentUser }) => {
 
     setUserVote(voteType);
     setHasVoted(true); // Marcar que el usuario ha votado
+    setLikes((prevLikes) => (voteType === "like" ? prevLikes + 1 : prevLikes)); // Actualiza los likes inmediatamente
 
     // Guardar en el localStorage que este usuario ya votó en este comentario
-    //localStorage.setItem(`hasVoted_${comment.id}_${currentUser.id}`, "true");
+    //localStorage.setItem(`hasVoted_${comment.id}_${currentUser.name}`, "true");
 
     try {
       await axios.patch(`${BASE_URL}/auth/likes?commentId=${comment.id}`, {
@@ -73,8 +75,17 @@ const CommentCard = ({ comment, currentUser }) => {
       });
     } catch (error) {
       console.error("Error al votar:", error);
+      // Si ocurre un error, podemos revertir el cambio de "likes"
+      setLikes((prevLikes) =>
+        voteType === "like" ? prevLikes - 1 : prevLikes
+      );
     }
   };
+
+  useEffect(() => {
+    console.log("Voto?", hasVoted);
+    console.log("Que voto?", userVote);
+  }, [hasVoted, userVote]);
 
   //const currentUserRef = useRef(currentUser);
 
@@ -134,13 +145,13 @@ const CommentCard = ({ comment, currentUser }) => {
         <p>{comment.comment}</p>
       </ContainerComment>
       <ContainerLikes>
-        <ButtonLike onClick={() => handleVote("like")} disabled={userVote}>
+        <ButtonLike onClick={() => handleVote("like")} disabled={hasVoted}>
           <SlLike />
-          {comment.like}
+          {likes}
         </ButtonLike>
         <ButtonDislike
           onClick={() => handleVote("dislike")}
-          disabled={userVote}
+          disabled={hasVoted}
         >
           Reportar
         </ButtonDislike>

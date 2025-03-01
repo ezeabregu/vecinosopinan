@@ -226,4 +226,9 @@ export const ButtonDislike = styled.button`
   cursor: pointer;
   color: var(--NoBlanco);
   font-weight: 600;
+
+  :disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
 `;
