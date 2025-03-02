@@ -32,6 +32,9 @@ export const ContainerRatingFormStyled = styled.div`
     h2 {
       font-size: 0.8rem;
     }
+    #pickerShow {
+      display: none;
+    }
   }
 `;
 

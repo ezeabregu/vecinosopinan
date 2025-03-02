@@ -113,6 +113,7 @@ const RatingForm = ({ nombreBarrio, idNeighborhood }) => {
                 {/* <Picker data={data} onEmojiSelect={console.log} /> */}
                 <button
                   type="button"
+                  id="pickerShow"
                   onClick={() => setShowPicker(!showPicker)}
                 >
                   {showPicker ? "Cerrar" : "🙂"}

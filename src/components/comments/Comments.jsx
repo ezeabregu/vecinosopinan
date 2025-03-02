@@ -25,6 +25,7 @@ import { PiUserCircleLight } from "react-icons/pi";
 import Spinner from "../spinner/Spinner";
 import { FaTrashCan } from "react-icons/fa6";
 import { SlLike } from "react-icons/sl";
+import { formatNumber } from "../../utils/functions";
 
 const formatFechaYHora = (fecha) => {
   return new Date(fecha).toLocaleString("es-ES", {
@@ -81,11 +82,6 @@ const CommentCard = ({ comment, currentUser }) => {
       );
     }
   };
-
-  useEffect(() => {
-    console.log("Voto?", hasVoted);
-    console.log("Que voto?", userVote);
-  }, [hasVoted, userVote]);
 
   //const currentUserRef = useRef(currentUser);
 
@@ -147,7 +143,7 @@ const CommentCard = ({ comment, currentUser }) => {
       <ContainerLikes>
         <ButtonLike onClick={() => handleVote("like")} disabled={hasVoted}>
           <SlLike />
-          {likes}
+          {formatNumber(likes)}
         </ButtonLike>
         <ButtonDislike
           onClick={() => handleVote("dislike")}

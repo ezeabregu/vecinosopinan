@@ -215,7 +215,12 @@ export const ButtonLike = styled.button`
   align-items: center;
   gap: 5px;
   padding: 0 5px;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 `;
+
 export const ButtonDislike = styled.button`
   background-color: #ff4c4c;
   width: auto;
