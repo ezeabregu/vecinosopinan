@@ -10,10 +10,12 @@ import Search from "./pages/Search/Search";
 import About from "./pages/About/About";
 import Singup from "./pages/Accounts/Singup/Singup";
 import Account from "./pages/Accounts/Account/Account";
+import StructuredData from "./components/structuredData/StructuredData";
 
 function App() {
   return (
     <div className="App">
+      <StructuredData />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
