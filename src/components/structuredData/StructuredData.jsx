@@ -7,6 +7,7 @@ const StructuredData = () => {
     name: "Vecinos Opinan",
     url: "https://www.vecinosopinan.com.ar",
     logo: "https://www.vecinosopinan.com.ar/vologo.png",
+    sameAs: ["https://www.instagram.com/vecinosopinan"],
   };
 
   return (
